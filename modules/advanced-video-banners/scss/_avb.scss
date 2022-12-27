@@ -197,7 +197,7 @@ section.avb {
                         @if $i == 100 {
                             display: none;
                         } @else {
-                            background: transparentize($text, $alpha);
+                            background: transparentize($secondary, $alpha);
                         }
                         
                     }

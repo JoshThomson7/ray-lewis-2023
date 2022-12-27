@@ -18,9 +18,10 @@
                 <?php endwhile; ?>
 
                 <article>
-                    <h5>best travel money</h5>
+                    <h5>Get in touch</h5>
                     <ul>
                         <li class="footer-email"><i class="fa-regular fa-at"></i> <?php echo FL1_Helpers::hide_email(get_field('footer_email', 'option')) ?></li>
+                        <li class="footer-address"><i class="fa-regular fa-phone"></i> 0114 419 0410</li>
                         <li class="footer-address"><i class="fa-regular fa-location-dot"></i> <?php the_field('footer_address', 'option'); ?></li>
                     </ul>
                 </article>
@@ -33,13 +34,11 @@
             <div class="max__width">
 
                 <div class="subfooter--left">
-                    <figure><img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/btm-logo.png'); ?>" alt="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name') ?>" /></figure>
-                    <small>&copy; <?php bloginfo('name') ?> <?php echo date('Y'); ?></small>
-                    <small>Registered in England &amp; Wales 14025A99</small>
+                    <figure><img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/logo.webp'); ?>" alt="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name') ?>" /></figure>
                 </div><!-- subfooter--left -->
 
                 <div class="subfooter--right">
-                    <small><a href="http://www.fl1.digital" target="_blank">Powered by FL1 Digital</a></small>
+                    <small><a href="https://thomson-website-solutions.com/" target="_blank">Website by Thomson Website Solutions</a></small>
                 </div><!-- subfooter--left -->
 
             </div><!-- max__width -->

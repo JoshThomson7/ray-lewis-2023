@@ -87,8 +87,6 @@ if(!empty($banners)):
             </div>
         <?php endif; ?>
 
-        <?php include ATM_PATH.'templates/atm-form.php'; ?>
-
     </section><!-- avb -->
 
 <?php else: ?>
