@@ -1,0 +1,190 @@
+
+#atm_form { 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc((100vw - 1347px) / 2);
+
+    @include breakpoint(1347px) {
+        right: calc((100vw - 100%) / 2);
+    }
+
+    @include breakpoint(1000px) {
+        position: relative;
+        right: auto;
+        padding: 0 20px;
+        top: auto;
+        transform: none;
+        margin-top: -39%;
+    }
+
+    @include breakpoint(500px) {
+        margin-top: -65%;
+    }
+}
+
+.atm-form {
+    width: 560px;
+    padding: 10px 40px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    @include breakpoint(1347px) {
+        width: 495px;
+    }
+
+    @include breakpoint(1000px) {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    h4 { 
+        font-size: 20px;
+        color: $primary;
+        font-weight: 700;
+
+        @include breakpoint(brotherbear) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &-switch {
+        display: flex;
+        margin-bottom: 20px;
+
+        @include breakpoint(brotherbear) {
+            min-width: 100%;
+        }
+        @include breakpoint(teenbear) {
+            padding: 0;
+        }
+
+        label,
+        a {
+            color: $text;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            align-items: center;
+            font-size: 17px;
+            padding: 15px;
+            width: 50%;
+            border-bottom: 2px solid transparent;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            @include breakpoint(brotherbear) {
+                padding: 15px 0;
+            }
+
+            &:hover {
+                border-bottom: 2px solid $border;
+                transition: all 0.3s ease;
+            }
+        }
+
+        input[type="radio"] {
+            display: none;
+            &:checked + label {
+                color: $primary;
+                border-bottom: 2px solid $primary;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &-input { 
+        margin: 10px 0 20px;
+        position: relative;
+        padding-top: 10px;
+
+        label.float {
+            font-size: 14px;
+            color: $text;
+            background: #fff;
+            padding: 0 4px ;
+            position: absolute;
+            text-transform: uppercase;
+            top: 1px;
+            left: 15px;
+            font-weight: 500;
+            z-index: 1;
+        }
+
+        select,
+        input[type="number"],
+        input[type="text"] {
+            border: 1px solid $lightgrey;
+            border-radius: 4px;
+            width: 100%;
+            background: #fff;
+            padding: 18px 20px 14px;
+            line-height: 29px;
+            font-size: 23px;
+            color: $text;
+            font-family: $primaryFont;
+        }
+
+        .input-pound { display: none;}
+
+        &.has-icon { 
+            input[type="number"] {
+                padding-left: 45px;
+            }
+
+            .currency-icon {
+                display: block;
+                position:  absolute;
+                bottom: 13px;
+                font-size: 23px;
+                left: 17px;
+                color: $primary;
+            }
+
+            @include breakpoint(1000px) {
+                .currency-icon { 
+                    bottom: 17px;
+                }
+            }
+        }
+
+        &.radio {
+            display: flex;
+            @include pretty-checkradio("label", "\f0c8", "\f14a");
+
+            @include breakpoint(1000px) {
+                flex-direction: column;
+            }
+
+            label { 
+                display: flex;
+                margin-right: 20px;
+                font-size: 15px;
+                text-transform: uppercase;
+
+                @include breakpoint(1000px) {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &--join {
+            display: flex;
+            flex-direction: column;
+
+            &.reverse { 
+                flex-direction: column-reverse;
+            }
+        }
+
+        button { 
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+} 

@@ -1,0 +1,95 @@
+/*
+*	Blog Single
+*
+*	Styles for blog single
+*
+*	@package Blog
+*	@version 1.0
+*/
+
+.blog__single-wrapper { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px !important;
+    @include breakpoint(brotherbear) {padding-top: 115px; flex-direction: column;}
+}
+
+.blog__single { flex: 1; padding-right: 12%;
+
+    .max__width { padding: 0;}
+
+    @include breakpoint(brotherbear) { flex-direction: column; padding-right: 0;}
+
+    .blog__featured__image { min-height: 320px; background-size: cover; background-repeat: no-repeat; background-position: center; margin: 0; box-shadow: 0 5px 15px rgba(black, 0.2); border-radius: 5px; overflow: hidden;
+        @include breakpoint(brotherbear) {margin: 0;}
+    }
+		
+    .blog__back__button{ color: $text; display: inline-block; margin-bottom: 20px;
+        &:hover{ color: $primary;}
+    }
+
+    .blog__info{
+        margin-bottom: 30px;
+
+        h5 { font-size: 17px; font-weight: 700; margin-bottom: 10px; color: $text; text-transform: uppercase; line-height: normal; letter-spacing: 1px;
+            @include breakpoint(brotherbear) {font-size: 15px;}
+
+            a { color: $primary;
+                &:hover { color: lighten($primary, 20%);}
+            }
+        }
+
+        h1 { font-size: 47px; text-transform: none; color: $text; position: relative; margin: 0; font-weight: 700; line-height: 53px;
+            @include breakpoint(brotherbear) {font-size: 34px; line-height: 44px;}
+        }
+        
+        date { 
+            color: $tertiary;
+            font-size: 19px;
+            font-weight: 500;
+            margin: 20px 0;
+            display: block;
+
+            @include breakpoint(brotherbear) {font-size: 17px; margin: 5px 0 20px;}
+        }
+
+        p.blog__excerpt { font-size: 23px; line-height: 37px;
+            @include breakpoint(brotherbear) {font-size: 18px; line-height: 26px;;}
+        }
+    }
+
+    .blog__pagination{
+        display: flex; justify-content: space-between; margin: 20px 0; padding: 20px 0; border-top: 1px solid $tertiary; border-bottom: 1px solid $tertiary;
+
+        a{
+            text-transform: uppercase; color: $baseFontColor; font-weight: bold;
+        }
+    }
+
+    &-members {
+        background: $lightgrey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        margin-bottom: 40px;
+        
+        p { 
+            font-weight: 700;
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        small { 
+            font-size: 14px;
+            color: $text;
+            display: block;
+            margin-top: 15px;
+            a { color: $primary;}
+        }
+    }
+
+    .flexible__content{
+        padding-bottom: 40px;
+    }
+}

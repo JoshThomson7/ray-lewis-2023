@@ -1,0 +1,191 @@
+/*
+ * Global
+ *
+*/
+body {
+    font-family: $primaryFont;
+    font-size: $baseFontSize;
+    font-weight: 400;
+    color: $text;
+    overflow-x: hidden;
+
+    &.no__scroll { overflow: hidden; }
+
+    &.admin-bar {
+        header.header { top: 32px; }
+    }
+}
+
+#page { display: flex; flex-direction: column; background: #fff;
+    &.sticky { padding-top: 100px; }
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: $primaryFont; }
+
+a { transition: all .3s ease;
+    &:hover { transition: all .3s ease; }
+}
+
+img { max-width: 100%; width: auto\9; height: auto; vertical-align: middle; border: 0; -ms-interpolation-mode: bicubic; }
+
+.max__width { max-width: 1400px; margin: 0 auto; width: 100%; padding: 0 20px; 
+    @include breakpoint(cousinbear){
+        padding: 0 20px;
+    }
+}
+
+.do__flex { display: flex; flex-wrap: wrap; }
+.hide { display: none; }
+
+/*
+ * GDPR Cookie Consent Banner
+ * @see https://en-gb.wordpress.org/plugins/uk-cookie-consent/
+*/
+#catapult-cookie-bar { width: 345px !important; bottom: 20px !important;
+    h3 { font-weight: 700; font-size: 18px;}
+    span { line-height: 20px; font-size: 14px;}
+    a { display: block; margin-top: 5px; font-weight: 500;}
+    button#catapultCookie { font-family: $primaryFont; font-size: 14px; font-weight: 700; text-transform: uppercase; padding: 7px 20px 7px !important; transition: all .3s ease; border-radius: 0;
+        &:hover { background: #fff; transition: all .3s ease; color: $text;}
+    }
+}
+
+/**
+ * Tooltips
+**/
+.tooltipster-template { display: none;
+    &.align-right { 
+        .tooltipster-content { text-align: right;}
+    }
+}
+
+.tooltip_templates { display: none; }
+
+/**
+ * Loaders
+**/
+.wp__loading { display: none; width: 20px; margin: 0 auto;
+    &.is__loading { display: block; }
+}
+
+.blazy { transition: opacity 500ms ease-in-out; max-width: 100%; opacity: 0;
+    &.b-loaded { opacity: 1; }
+}
+
+/**
+ * Buttons
+ */
+.button {
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 13px 35px;
+    display: flex;
+    transform: all .3s ease;
+    box-shadow: none;
+    transform: scale3d(1, 1, 1);
+    text-align: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    line-height: normal;
+    transition: all .3s ease;
+    border-radius: 4px;
+
+    @include breakpoint(teenbear) { padding: 12px 20px 10px; }
+
+    &:hover { transition: all .3s ease; transform: scale3d(1.02, 1.02, 1.02); }
+
+    &.small { font-size: 12px; padding: 4px 15px;
+        &:hover { box-shadow: 0 0 5px lighten($primary, 15%); }
+    }
+
+    &.medium { font-size: 15px; padding: 11px 23px;
+        &:hover { box-shadow: 0 0 5px lighten($primary, 15%); }
+        @include breakpoint(teenbear){font-size: 14px; padding: 7px 15px;}
+    }
+
+    &.primary { background: $primary; color: #fff;
+        &:hover { background: lighten($primary, 5%);}
+    }
+    &.secondary { background: $secondary; color: #fff; border: none;
+        &:hover { background: lighten($secondary, 5%);}
+    }
+    &.textLight { background: $textLight; color: #fff; border: none;
+        &:hover { background: lighten($textLight, 5%);}
+    }
+}
+
+@include breakpoint(papabear) { 
+    .ninja_table_wrapper {
+        position: relative;
+        &:before { 
+            content: "< SWIPE >";
+            display: block;
+            position: sticky;
+            top: 30px;
+            left: 50%;
+            padding: 3px 10px;
+            background: $secondary;
+            color: #fff;
+            font-size: 12px;
+            font-family: $primaryFont;
+            z-index: 1;
+            border-radius: 20px;
+            width: 75px;
+            text-align: center;
+            transform: translateX(-50%);
+        }
+    }
+    .semantic_ui .ui.table thead th {
+        position: relative;
+        min-width: 115px;
+        &:after { 
+            content: "";
+            display: block;
+            position: absolute;
+            height: 3px;
+            background-color: $secondary;
+            top: -3px;
+            left: -2px;
+            right: -2px;
+        }
+    }
+}
+
+.cli-modal-content { 
+    border-radius: 5px;
+    padding: 28px;
+}
+.cli-tab-container {
+    h4 { 
+        font-size: 24px;
+        color: $primary;
+        font-weight: 600;
+    }
+
+    .cli-privacy-overview:not(.cli-collapsed) .cli-privacy-content {
+        max-height: 70px;
+    }
+
+    p, .cli-privacy-content-text {
+        font-size: 16px;
+        color: $text;
+    }
+
+    .cli-switch input:checked + .cli-slider {
+        background-color: $secondary;
+    }
+
+    .cli-tab-footer { 
+        .wt-cli-privacy-accept-btn { 
+            background-color: $secondary;
+        }
+    }
+}
+
+@import '404';
+@import 'search-results';
+@import 'pagination';
+@import 'cards';
