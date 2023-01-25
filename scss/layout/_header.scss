@@ -49,7 +49,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
         .burger__menu { display: none; margin-right: 5px;
             @include breakpoint(papabear) { display: block; }
 
-            i { font-size: 30px; color: $primary;
+            i { font-size: 30px; color: #000 ;
                 @include breakpoint(teenbear) { font-size: 24px; }
             } 
         }

@@ -27,9 +27,9 @@ footer { position: relative; background: $primary; background-repeat: no-repeat;
 
             &.align-right { text-align: right;}
 
-            @include breakpoint(papabear) { width: 100%; border-bottom: 1px rgba(255,255,255,0.1) solid; }
+            @include breakpoint(papabear) { width: 100%; border-bottom: 1px #000 solid; }
 
-            h5 { font-size: 19px; font-weight: 700; color: #fff; padding-bottom: 20px; display: flex; align-items: center; justify-content: space-between;
+            h5 { font-size: 24px; font-weight: 700; color: #000; padding-bottom: 20px; display: flex; align-items: center; justify-content: space-between;
                 @include breakpoint(papabear) { padding: 17px 0; cursor: pointer; }
 
                 i { display: none; font-size: 14px; color: $secondary;
@@ -49,13 +49,13 @@ footer { position: relative; background: $primary; background-repeat: no-repeat;
             ul { margin: 0; padding: 0;
                 @include breakpoint(papabear) { font-size: 16px; padding-bottom: 20px; }
 
-                li { list-style: none; padding-bottom: 8px; color: #fff; display: flex;
+                li { list-style: none; padding-bottom: 8px; color: #000; display: flex;
                     @include breakpoint(papabear) { padding-bottom: 10px; }
 
                     i { font-size: 16px; color: $secondary; width: 22px; display: flex; justify-content: center; margin: 0 10px 0 0; }
                     img { width: 140px; margin-right: 10px; }
 
-                    a { font-size: 18px; color: #fff;
+                    a { font-size: 18px; color: #000;
                         &:hover { color: $secondary; opacity: 1; }
                     }
 

@@ -30,7 +30,7 @@ $full_width = $styles['fc_full_width'] == true ? true : false;
     <div class="cta__wrapper"<?php echo $bk_img; ?>>
         <?php if($full_width): ?><div class="max__width"><?php endif; ?>
         <article>
-            <h2><?php the_sub_field('cta_heading'); echo $padding; ?></h2>
+            <h2><?php the_sub_field('cta_heading');?></h2>
             <p><?php the_sub_field('cta_caption'); ?></p>
         </article>
 

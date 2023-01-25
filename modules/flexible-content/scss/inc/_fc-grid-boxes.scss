@@ -24,7 +24,7 @@
                 }
 
                 h5 { font-size: 13px; font-weight: 400; margin-bottom: 0; color: $secondary; text-transform: uppercase; line-height: normal; letter-spacing: 1px;}
-                h3 { font-size: 23px; color: $text; margin: 3px 0 10px; line-height: 28px; font-weight: 700; display: flex; align-items: center;
+                h3 { font-size: 28px; color: $text; margin: 3px 0 10px; line-height: 28px; font-weight: 700; display: flex; align-items: center;
 
                     @include breakpoint(teenbear){
                         margin-bottom: 0;
@@ -109,8 +109,8 @@
                     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,.9) 100%); /* Chrome10-25,Safari5.1-6 */
                     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-                    h3, p { color: #fff; margin: 0;}
-                    p { max-width: 335px; font-size: 27px; line-height: 29px; color: #fff; margin-top: 5px; font-weight: 400;}
+                    h3, p { color: #fff;}
+                    p { max-width: 335px; font-size: 20px; line-height: 24px; color: #fff; margin-top: 5px; font-weight: 400;}
 
                     &.left { text-align: left;}
 

@@ -1,6 +1,6 @@
 <nav id="nav_mobile" class="nav__mobile">
     <div>
-        <div class="menu__logo"><img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/btm-logo-wg.png'); ?>" alt="<?php bloginfo('name') ?>"></div>
+        <div class="menu__logo"><img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/logo.webp'); ?>" alt="<?php bloginfo('name') ?>"></div>
         <ul>
             <?php
                 while(have_rows('mega_menu', 'option')) : the_row();

@@ -112,7 +112,7 @@ section.avb {
                 .avb-banner__caption-actions { margin-top: 40px; display: flex; justify-content: flex-start;
                     @include breakpoint(cousinbear) { margin-top: auto; width: 100%;}
 
-                    a { display: block; background: $primary; color: #fff; font-weight: 700; font-size: 17px; text-align: center; border: none; text-transform: none;
+                    a { display: block; background: $primary; color: #000; font-weight: 700; font-size: 22px; text-align: center; border: none; text-transform: none;
                         &:hover { background: lighten($primary, 5%);}
 
                         @include breakpoint(cousinbear) { 
