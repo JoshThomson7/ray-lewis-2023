@@ -1,0 +1,38 @@
+.fc_custom_home_wrapper{
+    display: flex; min-height: 350px;
+
+    .left, .right{
+        background-size: cover; background-position: center; background-repeat: no-repeat; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+
+    .left{
+        width: 35%;
+
+        h3{padding: 10px; background: $primary; color: black; margin: 0;}
+        span{background: white; padding: 5px 10px;}
+    }
+
+    .right{
+        width: 65%;
+
+        .content{
+            display: flex; flex-direction: column;
+
+            span{
+                margin-bottom: 10px; font-size: 18px;
+
+                &.first{
+                    color: black; font-weight: 700;
+                }
+
+                &.second{
+
+                }
+
+                &.third{
+                    color: $primary; font-size: 34px;
+                }
+            }
+        }
+    }
+}

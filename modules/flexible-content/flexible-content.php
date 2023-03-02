@@ -55,6 +55,16 @@ if(have_rows('fc_content_types')):
             // Contact
             require('templates/fc-contact.php');
 
+        elseif(get_row_layout() === 'fc_custom_home'):
+
+            // Custom Home
+            require('templates/fc-custom-home.php');
+
+        elseif(get_row_layout() === 'fc_custom_maps'):
+
+            // Custom Map
+            require('templates/fc-custom-maps.php');
+
         elseif(get_row_layout() === 'fc_feature'):
 
             // Feature

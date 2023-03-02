@@ -43,4 +43,21 @@
 @import '../modules/flexible-content/scss/flexible-content';
 @import '../modules/blog/scss/blog';
 
-@import 'layout/footer'; 
+@import 'layout/footer';
+
+.home{
+  .flexible__content{
+    .fc_cta{
+      &:first-child{
+        .cta__wrapper{
+          padding: 20px 0;
+
+          article{width: auto;
+            h2{color: $secondary; font-size: 32px;}
+            p{display: none;}
+          }
+        }
+      }
+    }
+  }
+}

@@ -105,7 +105,7 @@ img { max-width: 100%; width: auto\9; height: auto; vertical-align: middle; bord
         @include breakpoint(teenbear){font-size: 14px; padding: 7px 15px;}
     }
 
-    &.primary { background: $primary; color: #fff;
+    &.primary { background: $primary; color: $secondary;
         &:hover { background: lighten($primary, 5%);}
     }
     &.secondary { background: $secondary; color: #fff; border: none;

@@ -1,0 +1,69 @@
+.fc_custom_map_wrapper{
+    display: flex; min-height: 350px;
+
+    .left, .right{
+
+        h5{font-size: 30px; line-height: 40px;}
+
+        article{
+            margin: 20px 0 30px; padding: 0 10px;
+
+            .contain{
+                display: flex; align-items: center; justify-content: space-between;
+
+                ul { margin: 0; padding: 0; width: 50%;
+                    @include breakpoint(papabear) { font-size: 16px; padding-bottom: 20px; }
+        
+                    li { list-style: none; padding-bottom: 8px; color: $primary; display: flex; margin: 0; font-size: 18px;
+                        @include breakpoint(papabear) { padding-bottom: 10px; }
+        
+                        i { font-size: 16px; color: $primary; width: 22px; display: flex; justify-content: center; margin: 0 10px 0 0; }
+                        img { width: 140px; margin-right: 10px; }
+        
+                        a { color: $primary; 
+                            &:hover { text-decoration: underline; opacity: 1; }
+                        }
+        
+                        &.footer-email { 
+                            i { 
+                                margin-top: 10px;
+                            }
+                        }
+        
+                        &.footer-address { 
+                            i { 
+                                margin-top: 7px;
+                            }
+                        }
+                    }
+                }
+
+                .button-contain{
+                    width: 50%; margin-top: -20px;
+                }
+            }
+        }
+    }
+
+    .left{
+        width: 50%; background: black; padding: 10px 10px 0 0;
+    }
+
+    .right{
+        width: 50%; background: $primary; padding: 10px 0 0 10px;
+
+        article{
+            h5{ color: black;}
+
+            .contain{
+                ul{
+                    li{color: black;
+                        i{color: black;}
+    
+                        a{color: black;} 
+                    }
+                }
+            }
+        }
+    }
+}

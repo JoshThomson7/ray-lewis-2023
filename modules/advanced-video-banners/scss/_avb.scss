@@ -77,7 +77,8 @@ section.avb {
                 }
 
                 .avb-banner__caption-wrap { 
-                    width: 50%;
+                    width: 65%; margin: 0 auto; background: rgba(0,0,0,0.8); padding: 20px;
+                    @include breakpoint(700px) { width: 100%;}
 
                     figure { 
                         width: 50px;
@@ -90,29 +91,28 @@ section.avb {
                 }
 
                 h1,
-                h2 { font-size: 60px; font-weight: 700; color:#fff; padding:0 0 10px; line-height: 65px;
+                h2 { text-align:center; font-size: 44px; font-weight: 700; color:#fff; padding:0 0 10px; line-height: 50px;
                     @include breakpoint(1000px) { 
-                        font-size: 43px;
+                        font-size: 42px;
                         line-height: 45px;
                     }
                 }
 
                 h3 { font-size: 13px; font-weight: 500; color:$secondary; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
 
-                p { font-size: 33px; color: #fff; line-height: 38px; padding:10px 0 0; padding-right: 25%;
-                    @include breakpoint(1000px) {
+                p { text-align:center; font-size: 26px; color: #fff; line-height: 28px; padding:5px 0 15px;
+                    @include breakpoint(1000px) { 
                         padding: 0;
-                        font-size: 25px;
+                        font-size: 24px;
                         line-height: 27px;
                     }
                     
                     a { color: #fff; border-bottom: 1px #fff solid; }
                 }
 
-                .avb-banner__caption-actions { margin-top: 40px; display: flex; justify-content: flex-start;
-                    @include breakpoint(cousinbear) { margin-top: auto; width: 100%;}
+                .avb-banner__caption-actions {
 
-                    a { display: block; background: $primary; color: #000; font-weight: 700; font-size: 22px; text-align: center; border: none; text-transform: none;
+                    a { margin-top: 10px; display: block; background: $primary; color: #000; font-weight: 700; font-size: 26px; text-align: center; border: none; text-transform: none;
                         &:hover { background: lighten($primary, 5%);}
 
                         @include breakpoint(cousinbear) { 

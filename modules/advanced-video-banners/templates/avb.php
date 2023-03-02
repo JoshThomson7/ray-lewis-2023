@@ -41,16 +41,14 @@ if(!empty($banners)):
                     <div class="avb-banner__caption">
                         <div class="max__width">
                             <div class="avb-banner__caption-wrap">
-                                <?php if($country): ?>
-                                    <figure class="flag">
-                                        <img src="<?php echo ATM_URL.'assets/img/countries/'.$country.'.svg'; ?>" alt="<?php echo $banner->heading(false); ?>">
-                                    </figure>
-                                <?php endif; ?>
+                                
                                 <?php if($banner->headingTop()): ?><?php echo $banner->headingTop(); ?><?php endif; ?>
                                 <?php if($banner->heading()): ?><?php echo $banner->heading(); ?><?php endif; ?>
                                 <?php if($banner->caption()): ?><p><?php echo $banner->caption(); ?></p><?php endif; ?>
 
-                                <?php if($banner->button_label()): ?>
+                                <iframe width="100%" height="400" src="https://www.youtube.com/embed/BLi-2kD8y6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                                <?php if($banner->button_label()): ?> 
                                     <div class="avb-banner__caption-actions">
                                         <a href="<?php echo $banner->button_url(); ?>"<?php echo $banner->button_url_target(); ?> title="<?php echo $banner->button_label(); ?>" class="button">
                                             <span><?php echo $banner->button_label(); ?></span>

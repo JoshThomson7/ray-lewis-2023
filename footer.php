@@ -18,11 +18,20 @@
                 <?php endwhile; ?>
 
                 <article>
-                    <h5>Get in touch</h5>
+                    <h5>Sheffield</h5>
                     <ul>
                         <li class="footer-email"><i class="fa-regular fa-at"></i> <?php echo FL1_Helpers::hide_email(get_field('footer_email', 'option')) ?></li>
                         <li class="footer-address"><i class="fa-regular fa-phone"></i> 0114 419 0410</li>
                         <li class="footer-address"><i class="fa-regular fa-location-dot"></i> <?php the_field('footer_address', 'option'); ?></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h5>Chesterfield</h5>
+                    <ul>
+                        <li class="footer-email"><i class="fa-regular fa-at"></i> <?php echo FL1_Helpers::hide_email(get_field('footer_email', 'option')) ?></li>
+                        <li class="footer-address"><i class="fa-regular fa-phone"></i> 0114 419 0410</li>
+                        <li class="footer-address"><i class="fa-regular fa-location-dot"></i> 7 Packers Row,<br>Chesterfield,<br>S40 1RB</li>
                     </ul>
                 </article>
 

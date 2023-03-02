@@ -23,6 +23,24 @@
                 </div>
             <?php endif; ?>
 
+            <!-- TOP BAR -->
+            <div class="top-bar">
+				
+				<div class="max__width">
+                    <div class="left">
+                        <p>Personal <span>Service.</span> Expert <span>Advice.</span> Remarkable <span>Eyewear.</span></p>
+                    </div>				
+
+                    <div class="right">
+                        <a href="tel:01144190410" class="phone">
+                            <i class="fa fa-phone"></i><span>0114 419 0410</span>
+                        </a>
+                        <a class="button primary" href="/contact-us">Contact Us</a>
+                    </div>
+                </div>	
+
+			</div>
+
             <div class="header__main">
 
                 <div class="max__width">

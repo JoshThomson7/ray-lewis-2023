@@ -46,13 +46,13 @@ Icon Grid
             }
 
             .icon-grid__icon { max-width: 150px; display: flex; margin-bottom: 20px;
-                span { font-size: 41px; color: $secondary; min-height: 80px; display: flex; justify-content: center; align-items: center; overflow: hidden;}
+                span { font-size: 71px; color: $white; min-height: 120px; display: flex; justify-content: center; align-items: center; overflow: hidden;}
             }
 
             .icon-grid__content {
 
-                h4 { font-size: 21px; color: $text; line-height: 29px; font-weight: 700;}
-                p { font-size: 16px; line-height: 23px; color: $textLight;
+                h4 { font-size: 32px; color: $primary; line-height: 36px; font-weight: 700;}
+                p { font-size: 20px; line-height: 24px; color: $white;
                     &:last-of-type { margin-bottom: 0;}
                 }
 

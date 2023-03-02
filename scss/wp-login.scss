@@ -9,11 +9,14 @@
 
 html {
 
+	body.assistant-page .header{display: none;}
+
 	body.login {
         outline: none;
         font-family: $primaryFont;
         min-height:600px;
         display: flex;
+		flex-direction: column;
         box-sizing: border-box;
         background: $primary;
     }
@@ -22,7 +25,7 @@ html {
 
 		/* Logo */
 		h1 { padding: 0 0 40px;
-			a { background:url(img/btm-logo.png) no-repeat scroll 0 0 transparent; background-size: 280px auto; display:block; margin:0 auto; width: 280px; padding:0; height: 65px;}
+			a { background:url(img/logo.webp) no-repeat scroll 0 0 transparent; background-size: 280px auto; display:block; margin:0 auto; width: 280px; padding:0; height: 75px;}
 		}
 
 		/* Error Message */
