@@ -35,4 +35,40 @@
             }
         }
     }
+
+    &.reverse{
+        .left{
+            width: 65%; padding: 110px 10px;
+
+            .content{
+                display: flex; flex-direction: column; align-items: center;
+    
+                span{
+                    margin-bottom: 10px; font-size: 18px;
+    
+                    &.first{
+                        color: black; font-weight: 700;
+                    }
+    
+                    &.second{
+    
+                    }
+    
+                    &.third{
+                        color: $primary; font-size: 34px; margin-bottom: 30px;
+                    }
+                }
+            }
+
+            p{color: black; font-size: 18px; text-align: center;}
+        }
+
+        .right{
+            width: 35%; justify-content: flex-end; padding: 0;
+
+            .content{background: black; width: 100%; text-align: center;
+                span{margin: 0; padding: 15px 0; font-weight: 900; font-size: 24px; color: $primary;}
+            }
+        }
+    }
 }

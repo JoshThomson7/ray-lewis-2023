@@ -35,7 +35,7 @@
                         <a href="tel:01144190410" class="phone">
                             <i class="fa fa-phone"></i><span>0114 419 0410</span>
                         </a>
-                        <a class="button primary" href="/contact-us">Contact Us</a>
+                        <a class="button primary" href="#">Got a question?</a>
                     </div>
                 </div>	
 

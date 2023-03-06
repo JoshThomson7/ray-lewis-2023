@@ -11,7 +11,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
     }
 
     .top-bar{
-        background: $secondary; padding: 5px 0;
+        background: $secondary; padding: 13x 0;
 
         .max__width{
             display: flex; justify-content: space-between; align-items: center;
@@ -30,6 +30,10 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
 
                     i{padding-right: 5px;}
                 }
+
+                .button{
+                    padding: 25px 25px; border-radius: 0; font-size: 16px;
+                }
             }
         }
     }
@@ -37,7 +41,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
     // Nav
     @import './mega-menu';
 
-    .header__main { position: relative; background: #fff; padding: 10px 0;
+    .header__main { position: relative; background: #fff; padding: 28px 0; border-bottom: 15px solid black;
 
         @include breakpoint(brotherbear) { padding: 5px 0;}
 
@@ -46,7 +50,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
         .header__main--left { display: flex; align-items: center;
             @include breakpoint(teenbear) { flex: 2; }
 
-            .logo { width: 290px; transition: all .4s ease; margin-right: 20px;
+            .logo { width: 270px; transition: all .4s ease; margin-right: 20px;
                 @include breakpoint(brotherbear) { margin: 0; width: 260px;}
                 a { display: block; 
                     svg { 

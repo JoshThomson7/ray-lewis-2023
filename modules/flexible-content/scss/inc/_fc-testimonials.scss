@@ -11,7 +11,7 @@
 
             .testimonial__meta { padding-bottom:20px; flex:1 0 100%;
 
-                h3 { font-size: 19px; color: $text; margin-bottom: 10px; line-height: 0.5;}
+                h3 { font-size: 24px; color: $text; margin-bottom: 10px; line-height: 26px;}
 
                 .stars {
                     @include breakpoint(mamabear) { margin-bottom:10px;}
@@ -21,10 +21,10 @@
 
             .testim__content { padding-right: 20px; overflow: hidden;
                 &.trunc { height: 75px;}
-                p { font-size:16px; line-height:26px; color:$textLight; padding-bottom:15px; margin:0;}
+                p { font-size:20px; line-height:24px; color:$textLight; padding-bottom:15px; margin:0;}
             }
 
-            .testim__read-more { font-size: 13px; color: $primary; display: block; margin: 10px 20px 0 0; cursor: pointer; text-align: right;
+            .testim__read-more { font-size: 20px; color: $primary; display: block; margin: 10px 20px 0 0; cursor: pointer; text-align: right;
                 &:hover { color: lighten($primary, 5%);}
             }
 

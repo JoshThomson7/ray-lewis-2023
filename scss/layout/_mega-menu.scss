@@ -13,8 +13,17 @@ nav.mega-menu {
         li {
             list-style: none;
             position: relative;
+
+            &:last-child{
+                a{
+                    background: black; color: white; border-radius: 5px; 
+
+                    &:hover{color: $primary;}
+                }
+            }
+
             a {
-                font-size: 18px;
+                font-size: 15px;
                 color: $secondary;
                 font-weight: 500;
                 text-transform: uppercase;
@@ -59,7 +68,7 @@ nav.mega-menu {
 
             &:hover {
                 a {
-                    color: $secondary;
+                    color: $primary;
                 }
             }
 

@@ -3,7 +3,7 @@
 
     .left, .right{
 
-        h5{font-size: 30px; line-height: 40px;}
+        h5{font-size: 30px; line-height: 40px; text-decoration: underline;}
 
         article{
             margin: 20px 0 30px; padding: 0 10px;
@@ -47,10 +47,18 @@
 
     .left{
         width: 50%; background: black; padding: 10px 10px 0 0;
+
+        iframe{
+            border-bottom: 10px solid $primary!important;
+        }
     }
 
     .right{
         width: 50%; background: $primary; padding: 10px 0 0 10px;
+
+        iframe{
+            border-bottom: 10px solid black!important;
+        }
 
         article{
             h5{ color: black;}
