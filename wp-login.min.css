@@ -49600,7 +49600,7 @@ html body.login {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background: #FBD401;
+  background: #ffd100;
 }
 html .login {
   /* Logo */
@@ -49712,7 +49712,7 @@ html .login form label[for=user_login]:before {
   position: relative;
   top: 4px;
   margin-right: 7px;
-  color: #FBD401;
+  color: #ffd100;
 }
 html .login form label[for=user_pass]:before {
   content: "\f160";
@@ -49721,7 +49721,7 @@ html .login form label[for=user_pass]:before {
   position: relative;
   top: 4px;
   margin-right: 7px;
-  color: #FBD401;
+  color: #ffd100;
 }
 html .login form p.submit {
   display: flex;
@@ -49740,12 +49740,12 @@ html .login form p.submit #wp-submit {
   transition: all 0.3s ease;
 }
 html .login form p.submit #wp-submit:hover {
-  background: #feda17;
+  background: #ffd61a;
   transition: all 0.3s ease;
 }
 html .login .button.wp-hide-pw .dashicons {
   top: 14px;
-  color: #FBD401;
+  color: #ffd100;
 }
 html .forgetmenot {
   padding-top: 17px;

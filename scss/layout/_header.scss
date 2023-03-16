@@ -25,6 +25,19 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
             .right{
                 display: flex; align-items: center;
 
+                ul{
+                    display: flex;
+                    li{
+                        padding-right: 15px;
+
+                        a{
+                            i{
+                                color: $primary; font-size: 24px;
+                            }
+                        }
+                    }
+                }
+
                 .phone{
                     color: $primary; margin-right: 15px;
 

@@ -32,6 +32,11 @@
                     </div>				
 
                     <div class="right">
+                        <ul style="margin-right: 50px;">
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
                         <a href="tel:01144190410" class="phone">
                             <i class="fa fa-phone"></i><span>0114 419 0410</span>
                         </a>
