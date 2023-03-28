@@ -11,14 +11,14 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
     }
 
     .top-bar{
-        background: $secondary; padding: 13x 0;
+        background: $secondary; padding: 2px 0;
 
         .max__width{
-            display: flex; justify-content: space-between; align-items: center;
+            display: flex; justify-content: space-between; align-items: center; padding: 0 0 0 20px; max-width: 100%;
 
             .left{
-                p{font-size: 20px; color: $primary;
-                    span{font-weight: 900;}
+                p{font-size: 20px; color: $white; font-weight: 700;
+                    span{font-weight: 900; color: $primary;}
                 }
             }
 
@@ -38,14 +38,16 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
                     }
                 }
 
-                .phone{
-                    color: $primary; margin-right: 15px;
+                p{color: $white; font-size: 18px; font-weight: 700;}
 
-                    i{padding-right: 5px;}
+                .phone{
+                    color: $primary; margin-right: 15px; font-size: 18px; font-weight: 700;
+
+                    i{padding-right: 5px; color: $white;}
                 }
 
                 .button{
-                    padding: 25px 25px; border-radius: 0; font-size: 16px;
+                    padding: 24px 31px; border-radius: 0; font-size: 18px; text-transform: uppercase;
                 }
             }
         }
@@ -54,7 +56,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
     // Nav
     @import './mega-menu';
 
-    .header__main { position: relative; background: #fff; padding: 28px 0; border-bottom: 15px solid black;
+    .header__main { position: relative; background: #fff; padding: 28px 0;
 
         @include breakpoint(brotherbear) { padding: 5px 0;}
 
@@ -90,7 +92,7 @@ header.header { width: 100%; transition: all .4s ease; /*position: fixed; top: 0
         .burger__menu { display: none; margin-right: 5px;
             @include breakpoint(papabear) { display: block; }
 
-            i { font-size: 30px; color: #000 ;
+            i { font-size: 30px; color: $secondary ;
                 @include breakpoint(teenbear) { font-size: 24px; }
             } 
         }

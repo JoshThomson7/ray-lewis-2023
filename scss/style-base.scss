@@ -63,11 +63,14 @@
 }
 
 #ctahome_section{
-  border-top: 15px solid black;
-
   .cta__wrapper{
     .button{
-      background: black; color: $primary;
+      background: $secondary; color: $primary;
     }
   }
+}
+
+// Youtube video
+.html5-video-player a, .ytp-title-expanded-heading{
+  display: none!important;
 }

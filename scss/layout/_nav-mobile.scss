@@ -34,7 +34,7 @@
         .mm-listview { margin:20px 0 0 !important;
 
             li { margin-left:20px;
-                a { color: #000 !important; padding-left:0 !important; font-size: 21px; font-weight: 700; padding: 15px 10px;
+                a { color: $secondary !important; padding-left:0 !important; font-size: 21px; font-weight: 700; padding: 15px 10px;
                     span { display:inline-block; width:20px; text-align:center; margin-right:3px; font-size:20px; position:relative; top:2px;}
 
                     &.mm-prev {

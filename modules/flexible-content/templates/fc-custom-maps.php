@@ -25,7 +25,7 @@ CUSTOM MAPS
                 </ul>
 
                 <div class="button-contain">
-                    <a href="#" class="button primary">Message Us</a>
+                    <a href="mailto:hello@ray-lewis.com?subject=Sheffield Branch &body=Hello," class="button primary">Message Us</a>
                 </div>
             </div>
         </article>
@@ -48,7 +48,7 @@ CUSTOM MAPS
                 </ul>
 
                 <div class="button-contain">
-                    <a href="#" class="button secondary">Message Us</a>
+                    <a href="mailto:hello@ray-lewis.com?subject=Chesterfield Branch &body=Hello," class="button secondary">Message Us</a>
                 </div>
             </div>
         </article>

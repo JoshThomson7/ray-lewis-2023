@@ -46,7 +46,7 @@
     }
 
     .left{
-        width: 50%; background: black; padding: 10px 10px 0 0;
+        width: 50%; background: $secondary; padding: 10px 10px 0 0;
 
         iframe{
             border-bottom: 10px solid $primary!important;
@@ -57,18 +57,18 @@
         width: 50%; background: $primary; padding: 10px 0 0 10px;
 
         iframe{
-            border-bottom: 10px solid black!important;
+            border-bottom: 10px solid $secondary!important;
         }
 
         article{
-            h5{ color: black;}
+            h5{ color: $secondary;}
 
             .contain{
                 ul{
-                    li{color: black;
-                        i{color: black;}
+                    li{color: $secondary;
+                        i{color: $secondary;}
     
-                        a{color: black;} 
+                        a{color: $secondary;} 
                     }
                 }
             }

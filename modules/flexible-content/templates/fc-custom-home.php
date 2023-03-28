@@ -7,7 +7,7 @@ CUSTOM
 ?>
 
 <div class="fc_custom_home_wrapper">
-    <div class="left" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://ray-lewis.twsbeta3.co.uk/wp-content/uploads/2022/12/ray-lewis.webp); ">
+    <div class="left" style="background-image:linear-gradient(to bottom, rgba(71, 71, 71, 0.3), rgba(71, 71, 71, 0.3)),url(https://ray-lewis.twsbeta3.co.uk/wp-content/uploads/2022/12/ray-lewis.webp); ">
         <h3>Our Guarentee</h3>
         <span>Mr Patel, Owner</span>
     </div>
@@ -34,7 +34,7 @@ CUSTOM
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus arcu, lacinia malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus arcu, lacinia malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus arcu, lacinia malesuada.</p>
     </div>
 
-    <div class="right" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://ray-lewis.twsbeta3.co.uk/wp-content/uploads/2023/01/couple-glasses-scaled.jpg); ">
+    <div class="right" style="background-image:linear-gradient(to bottom, rgba(71, 71, 71, 0.3), rgba(71, 71, 71, 0.3)),url(https://ray-lewis.twsbeta3.co.uk/wp-content/uploads/2023/01/couple-glasses-scaled.jpg); ">
         <div class="content">
             <span>Get an Eye Exam</span>
         </div>

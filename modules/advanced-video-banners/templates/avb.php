@@ -46,7 +46,7 @@ if(!empty($banners)):
                                 <?php if($banner->heading()): ?><?php echo $banner->heading(); ?><?php endif; ?>
                                 <?php if($banner->caption()): ?><p><?php echo $banner->caption(); ?></p><?php endif; ?>
 
-                                <iframe width="100%" height="400" src="https://www.youtube.com/embed/BLi-2kD8y6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <!-- <iframe width="100%" height="400" src="https://www.youtube.com/embed/BLi-2kD8y6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
                                 <?php if($banner->button_label()): ?> 
                                     <div class="avb-banner__caption-actions">

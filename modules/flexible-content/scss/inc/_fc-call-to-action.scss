@@ -19,7 +19,7 @@
             p { font-size: 22px; padding-top: 20px; margin: 0; color: #fff;}
         }
 
-        a { display: block; padding: 13px 35px; background: $primary; color: #000; font-size: 22px; font-weight: 700; position: relative; z-index: 2; border: none; align-self: center; font-family: $primaryFont;
+        a { display: block; padding: 13px 35px; background: $primary; color: $secondary; font-size: 22px; font-weight: 700; position: relative; z-index: 2; border: none; align-self: center; font-family: $primaryFont;
             @include breakpoint(mamabear) { font-size: 18px;}
         }
 

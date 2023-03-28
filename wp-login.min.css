@@ -49639,18 +49639,18 @@ html .login p.message {
   border-radius: 3px;
 }
 html .login #nav {
-  color: #000 !important;
+  color: #474747 !important;
   float: right;
   margin: 0;
   padding: 0 20px 20px 0;
   opacity: 0.7;
 }
 html .login #nav a {
-  color: #000 !important;
+  color: #474747 !important;
   text-decoration: none !important;
 }
 html .login #nav a:hover {
-  color: #000 !important;
+  color: #474747 !important;
   text-decoration: underline !important;
 }
 html .login #login {
@@ -49671,11 +49671,11 @@ html .login #backtoblog {
   opacity: 0.7;
 }
 html .login #backtoblog a {
-  color: #000 !important;
+  color: #474747 !important;
   text-decoration: none;
 }
 html .login #backtoblog a:hover {
-  color: #000 !important;
+  color: #474747 !important;
   text-decoration: underline;
 }
 html .login form {
@@ -49687,7 +49687,7 @@ html .login form {
 }
 html .login form label {
   font-size: 18px;
-  color: #000;
+  color: #474747;
   position: relative;
   content: "";
   display: block;
@@ -49697,9 +49697,9 @@ html .login form input[type=text],
 html .login form input[type=password] {
   background: none;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #474747;
   box-shadow: none;
-  color: #000;
+  color: #474747;
   padding: 15px 10px;
   margin-top: 5px;
   font-size: 16px;
@@ -49733,7 +49733,7 @@ html .login form p.submit #wp-submit {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Brandon Grotesque", sans-serif;
-  background: #000;
+  background: #474747;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -49757,7 +49757,7 @@ html .forgetmenot input {
 }
 html .forgetmenot label {
   font-size: 15px !important;
-  color: #000;
+  color: #474747;
   display: flex;
   margin-left: 5px;
   line-height: normal;

@@ -8,7 +8,7 @@
     .left{
         width: 35%;
 
-        h3{padding: 10px; background: $primary; color: black; margin: 0;}
+        h3{padding: 10px; background: $primary; color: $secondary; margin: 0;}
         span{background: white; padding: 5px 10px;}
     }
 
@@ -22,7 +22,7 @@
                 margin-bottom: 10px; font-size: 18px;
 
                 &.first{
-                    color: black; font-weight: 700;
+                    color: $secondary; font-weight: 700;
                 }
 
                 &.second{
@@ -47,7 +47,7 @@
                     margin-bottom: 10px; font-size: 18px;
     
                     &.first{
-                        color: black; font-weight: 700;
+                        color: $secondary; font-weight: 700;
                     }
     
                     &.second{
@@ -60,13 +60,13 @@
                 }
             }
 
-            p{color: black; font-size: 18px; text-align: center;}
+            p{color: $secondary; font-size: 18px; text-align: center;}
         }
 
         .right{
             width: 35%; justify-content: flex-end; padding: 0;
 
-            .content{background: black; width: 100%; text-align: center;
+            .content{background: $secondary; width: 100%; text-align: center;
                 span{margin: 0; padding: 15px 0; font-weight: 900; font-size: 24px; color: $primary;}
             }
         }

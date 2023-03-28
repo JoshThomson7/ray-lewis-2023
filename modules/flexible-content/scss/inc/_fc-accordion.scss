@@ -55,7 +55,7 @@ Accordion
             }
             h3:not(.toggle) { padding: 0; margin-bottom: 20px;}
             .accordion__content { display: block; animation: fadeInUp .3s ease-in;}
-            .accordion__bg { background: #fff; box-shadow: 0 15px 60px rgba(black, 0.13);}
+            .accordion__bg { background: #fff; box-shadow: 0 15px 60px rgba($secondary, 0.13);}
         }
     }
 }

@@ -16,7 +16,7 @@ nav.mega-menu {
 
             &:last-child{
                 a{
-                    background: black; color: white; border-radius: 5px; 
+                    background: $secondary; color: white; border-radius: 5px; 
 
                     &:hover{color: $primary;}
                 }
