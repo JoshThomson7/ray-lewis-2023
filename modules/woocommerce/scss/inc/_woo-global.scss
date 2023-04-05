@@ -1,0 +1,24 @@
+/**
+ *
+ * Global Woo styles
+ *
+*/
+
+// disable
+.disable { cursor: not-allowed; pointer-events: none;}
+
+.wc__wrapper { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 50px; max-width: 1400px; margin: 0 auto; width: 100%;
+    &.wc__shop {
+        @include breakpoint(teenbear) { padding: 0;}
+        .summary.entry-summary { 
+            @include breakpoint(mamabear) { 
+                .max__width { padding: 0 10px;}
+            }
+        }
+    }
+
+    .woocommerce { width: 100%;}
+
+    @import 'woo-sidebars';
+    @import 'woo-content';
+}

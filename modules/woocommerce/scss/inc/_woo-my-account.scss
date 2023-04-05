@@ -1,0 +1,400 @@
+/**
+ * Woo My Account
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+body.woocommerce-account {
+
+    header.header {
+        
+        .header__main { 
+            align-items: center;
+            padding: 10px 0 10px 20px;
+
+            &--right { 
+                top: auto;
+                align-items: center;
+            }
+        }
+
+        .logo {
+            width: 175px;
+        }
+    }
+
+    section.avb .avb-banners .avb-banner { 
+        min-height: 380px;
+    }
+
+    .wc__wrapper { padding: 0 20px 0 20px;
+        @include breakpoint(cousinbear) { padding: 0 20px;}
+    }
+
+    @include breakpoint(papabear) { 
+        .wc__wrapper { padding: 0 10px;}
+    }
+
+    .woocommerce { display: flex; justify-content: space-between; padding: 20px 0 60px; width: 100%; flex-wrap: wrap; margin-top: 20px;
+        @include breakpoint(papabear) { flex-direction: column; padding: 10px 20px;}
+    }
+
+    nav.woocommerce-MyAccount-navigation { width: 300px;
+        @include breakpoint(papabear) { width: 100%; margin-bottom: 20px; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
+
+        ul {
+            @include breakpoint(papabear) { display: flex; align-items: center; justify-content: space-between;}
+
+            li { border-bottom: 1px $border solid;
+
+                @include breakpoint(papabear) { flex: 1 0 auto; border-bottom: none;} 
+
+                // HIDE REFER A FRIEND FOR LAUNCH
+                &.woocommerce-MyAccount-navigation-link--myreferrals{
+                    display: none;
+                }
+
+                a { display: block; padding: 20px; color: $text; display: flex; align-items: center; border-left: 1px transparent solid; font-size: 15px; font-weight: 700;
+                    &:before { font-family: 'Font Awesome 6 Pro'; font-size: 22px; margin-right: 10px; font-weight: 300; width: 26px; text-align: center;}
+
+                    @include breakpoint(papabear) { flex-direction: column; align-items: center; text-align: center; font-size: 12px;
+                        &:before { display: block; margin-right: 0;}
+                    }
+                }
+
+                &:hover{
+                    a { color: $primary;}
+                }
+
+                &.is-active {
+                    a { color: $primary;}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--book { 
+                    background: $quaternary;
+                    border-bottom: none;
+                    margin-bottom: 20px;
+
+                    @include breakpoint(papabear) { margin-bottom: 0;} 
+                    
+                    a { justify-content: center; color: #fff;}
+
+                    &:hover { 
+                        a { background: lighten($quaternary, 5%);}
+                    }
+                }
+
+                &.woocommerce-MyAccount-navigation-link--dashboard {
+                    a:before { content: "\f0db";}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--orders {
+                    a:before { content: "\f233"; font-size: 22px;}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--subscriptions {
+                    a:before { content: "\f2f9";}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--payment-methods {
+                    a:before { content: "\f09d"; font-size: 19px;}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--downloads {
+                    a:before { content: "\f103";}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--edit-address {
+                    a:before { content: "\f3c5"; font-size: 21px;}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--edit-account {
+                    a:before { content: "\f007"; font-size: 21px;}
+                }
+
+                &.woocommerce-MyAccount-navigation-link--customer-logout {
+                    a:before { content: "\f08b"; font-size: 21px;}
+                }
+            }
+        }
+    }
+
+    .woocommerce-MyAccount-content { flex: 1 0 auto; width: calc(100% - 300px); padding: 0 0 0 40px;
+        @include breakpoint(papabear) { width: 100%;  padding-left: 0;}
+
+        .my-account-orders__section_heading { margin-bottom: 20px;}
+
+        #message.updated { display: flex; align-items: center; padding: 9px 10px 7px; flex: 1 0 100%; background: $lightgrey; color: $text; font-size: 13px; font-weight: 600;
+            @include breakpoint(mamabear) { flex-direction: column; align-items: center; text-align: center;}
+        
+            &:before { font-family: "Font Awesome 5 Pro"; content: "\f05a"; color: $primary; font-size: 23px; display: block; margin-right: 10px;}
+        }
+
+        h2,
+        h3 { font-size: 22px; color: $text; margin-bottom: 20px; font-weight: 700;}
+
+        &> p {
+            &:first-of-type { margin-bottom: 20px; padding: 20px; background: $lightgrey; font-size: 15px; line-height: 26px;
+                mark { background: none; font-weight: 700; color: $text;}
+                strong { font-weight: 600; color: $text;}
+            }
+
+            a { color: $secondary; font-weight: 600;}
+        }
+
+        .button{color: $primary;}
+
+        .wc__my__account__profile { padding: 15px 0 13px; margin-bottom: 20px; display: flex; align-items: center; border-bottom: 1px $borderDark solid;
+            .wc__my__account__icon { background: $secondary; width: 50px; height: 50px; border-radius: 100%; margin-right: 20px; overflow: hidden; text-align: center;
+                i { font-size: 52px; color: darken($text, 15%);}
+            }
+
+            .wc__my__account__user__meta {
+                h3 { font-size: 22px; color: $text; font-weight: 700; margin-bottom: 0; display: flex; align-items: center;
+                    @include breakpoint(mamabpapabearear) { font-size: 18px;}
+
+                    figure { border-radius: 3px; font-size: 11px; text-transform: uppercase; font-weight: 800; color: darken($border, 30%); padding: 2px 6px; margin-left: 20px; display: flex; align-items: center; border: 1px $border solid;
+                        i { font-size: 18px; color: $secondary; margin-right: 5px;}
+                    }
+                }
+            }
+
+            .wc__my__account__actions { margin-left: auto; display: flex; align-items: center;
+                a { display: flex; align-items: center; color: $text; font-size: 13px; font-weight: 600; margin-left: 20px; text-transform: uppercase;
+                    @include breakpoint(papabear) { font-size: 15px;}
+
+                    i { font-size: 15px; margin-right: 5px; color: $primary;}
+
+                    &:hover { color: $primary;}
+                }
+            }
+        }
+
+        // Addresses
+        .woocommerce-Addresses { display: flex; padding: 20px 0;
+            .woocommerce-Address { padding-right: 40px; width: math.percentage(math.div(1,2));
+                header { display: flex; margin-bottom: 20px; display: flex; align-items: center;
+                    h3 { font-size: 19px; font-weight: 700; color: $text; margin-bottom: 0;}
+                    a.edit { color: #fff; font-size: 12px; text-transform: uppercase; background: $primary; font-weight: 700; padding: 4px 10px 4px; margin-left: 20px;}
+                }
+
+                address { line-height: 22px; font-size: 15px;}
+            }
+        }
+
+        .wc-social-login-profile { 
+            a.js-show-available-providers { color: #fff; display: inline-block; padding: 10px 20px; background: #d93f97; border-radius: 3px; font-size: 14px; font-weight: 800;}
+        }
+
+        // Account Details
+        form.woocommerce-EditAccountForm,
+        .woocommerce-address-fields__field-wrapper { display: flex; flex-wrap: wrap;
+            div.clear { display: none;}
+
+            p { width: 100%;
+                &.form-row { width: 50%; padding-right: 20px; margin-bottom: 20px; flex: 1 0 auto; display: flex; flex-direction: column; justify-content: flex-end;                    
+                    @include breakpoint(papabear) { width: 100%; padding-right: 0;}
+
+                    label { display: block; font-size: 16px; font-weight: 700; color: $text; padding-bottom: 5px; align-self: flex-start;
+                        &.required { color: tomato;}
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"],
+                    input[type="password"] { border:none; padding: 15px; width: 100%; font-family: $primaryFont; font-size: 16px; color: $text; background: $lightgrey; border-radius: 3px;
+                        @include breakpoint(papabear) { width: 100%;}
+                    }
+
+                    // &.form-row-first,
+                    // &.form-row-last { }
+
+                    span {
+                        em { font-size: 12px; margin-top: 5px; display: block;}
+                    }
+                }
+
+                input[type="checkbox"] { appearance: checkbox;}
+
+                &:not(.form-row) { display: flex; justify-content: flex-end; margin-right: 20px; padding-bottom: 40px;}
+            }
+
+            fieldset { width: 100%; margin-top: 20px; display: flex; flex-wrap: wrap;
+                legend { flex:1 0 100%; font-size: 22px; font-weight: 700; color: $secondary; margin-bottom: 20px;}
+
+                p {
+                    &:first-of-type {
+                        &.form-row { margin-bottom: 20px;}
+                    }
+
+                    &.form-row { width: 100%;}
+                }
+            }
+        }
+
+        // Submit buttons
+        button[type="submit"],
+        input[type="submit"] { font-family: $primaryFont; font-size: 15px; font-weight: 800; padding: 16px 25px 12px; display: block; cursor: pointer; margin-top: 10px; background: $primary; color: #fff; border: none;transition: all .3s ease;
+            &:hover { background: $primary;}
+        }
+
+        // Edit Address
+        .woocommerce-address-fields {
+            #billing_address_2_field {
+                &:before { content:"Address 2"; display: block; color: #fff; font-size: 13px; font-weight: 700; text-transform: uppercase; padding-bottom: 5px;}
+            }
+
+            p:not(.form-row) { display: flex; justify-content: flex-end; margin: 0 20px 0;}
+        }
+
+        // Main orders table
+        table {
+            &.shop_table { width: 100%;
+                thead {
+                    tr {
+                        th { padding: 10px;
+                            &.woocommerce-orders-table__header-order-actions { text-align: right;}
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        @include breakpoint(papabear) { flex-direction: column;}
+
+                        td {
+                            @include breakpoint(papabear) { flex-direction: column; align-items: flex-start;
+                                &:before { margin-bottom: 5px;}
+                            }
+
+                            i { font-size: 12px; color: $primary; display: inline-block; margin: 0 5px 9px 0;}
+
+                            span {
+                                &.status-label { display: inline-block; padding: 4px 13px; border-radius: 4px; font-size: 12px; font-weight: 700; margin: 3px 0;
+                                    &.completed { border: 1px solid $green; color: $green;}
+                                    &.on-hold { border: 1px solid darken($tertiary, 20%); color: darken($tertiary, 20%);}
+                                    &.failed { border: 1px solid tomato; color: tomato;}
+                                } 
+                            }
+
+                            .button { font-family: $primaryFont; font-size: 12px; font-weight: 800; padding: 8px 25px; display: inline-block; text-transform: uppercase; text-align: center; color: $text; transition: all .3s ease; background: $primary; color: #fff;
+                                @include breakpoint(papabear) { margin: 10px 0 0; border-left: none; min-width: 100px;}
+                            }
+                        }
+
+                        .woocommerce-orders-table__cell-order-actions { text-align: right;}
+                    }
+                }
+
+                tfoot {
+                    tr {
+                        th,
+                        td { text-align: left; padding: 10px; border-bottom: 1px darken($lightgrey, 3%) solid;
+                            span.woocommerce-Price-amount { font-size: 22px; font-weight: 700; color: $primary}
+                        }
+                    }
+                }
+            }
+
+            &.order_details,
+            &.subscription_details,
+            &.account-payment-methods-table { margin-bottom: 20px;}
+
+             &.account-payment-methods-table + a { font-family: $primaryFont; font-size: 16px; font-weight: 800; padding: 10px 23px; display: inline-block; cursor: pointer; margin-top: 10px; background: $primary; color: #fff; border: none;
+                 &:hover { background: lighten($primary, 5%);}
+             }
+        }
+
+        #add_payment_method {
+
+            ul.woocommerce-PaymentMethods { padding: 20px 20px 1px 20px; border: 1px $borderDark solid;
+                li { margin-bottom: 20px;
+                    label { font-size: 16px; font-weight: 700; color: $text; margin-bottom: 10px; display: flex; align-items: center; flex-wrap: wrap;
+                        i { display: none;}
+
+                        &[for="payment_method_realex_redirect"] {
+                            img { display: none;}
+                        }
+
+                        &[for="payment_method_stripe"] { padding-left: 0 !important; display: flex !important;
+                            img { display: none;}
+                        }
+
+                        &[for="wc-stripe-update-subs-payment-method-card"] { display: flex !important;}
+                    }
+
+                    p { font-size: 14px; line-height: 20px;}
+
+                    @include pretty-checkradio("label", "\f111", "\f058");
+
+                    ul.wc-saved-payment-methods { padding: 10px 0 0 10px;
+                        li { margin-bottom: 10px;
+                            label { font-size: 14px; margin-bottom: 0;
+                                &.wc-stripe-new-payment-method { display: flex !important;}
+                            }
+                        }
+                    }
+
+                    &.payment_method_ppec_paypal {
+                        label img { display: none;}
+                    }
+                }
+            }
+        }
+
+        // Dashboard
+        .wc__dashboard { display: flex; flex-wrap: wrap; margin: 0 -10px 40px;
+            article { width: math.percentage(math.div(1,2)); flex: 1 0 420px;
+                @include breakpoint(papabear) { margin-bottom: 20px;}
+
+                .wc__dashboard__item-inner { border: 1px $borderDark solid; padding: 30px; color: $text; margin: 10px; display: block; height: 100%;
+                    h4 { font-size: 15px; font-weight: 700;display: flex; align-items: center; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 0.5px;
+                        i { font-size: 20px; margin-right: 10px; color: $primary;}
+                    }
+
+                    ul { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px $borderDark solid;
+                        &:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none;}
+                        li { display: flex; font-size: 14px; margin-bottom: 10px;
+                            strong { font-weight: 700; min-width: 120px;}
+                        }
+                    }
+
+                    p { font-size: 14px; margin-bottom: 10px; line-height: 19px;}
+
+                    table.credits-table { 
+                        thead { 
+                            th { font-size: 13px;
+                                @include breakpoint(mamabear) { padding: 0 0 10px;}
+                                &.credits { width: 60px;}
+                                &.expiry { width: 100px; min-width: 100px;}
+                            }
+                        }
+
+                        tbody { 
+                            td { font-size: 13px;
+                                @include breakpoint(mamabear) { padding: 0 0 10px;}
+                                &.credits { width: 60px;}
+                                &.expiry { width: 100px; min-width: 100px;}
+                            }
+                        }
+                    }
+
+                    &:hover { background: $tertiary; border: 1px $tertiary solid;}
+                }
+            }
+        }
+
+        .woocommerce-message,
+        .woocommerce-Message { margin: 0 0 20px;
+            &:before { content: "\f05a";}
+        }
+
+        .woocommerce-pagination { padding: 20px 10px 0; display: flex; justify-content: flex-end;
+            .woocommerce-button { background: $border; color: $text; padding: 10px 20px; font-weight: bold; text-transform: uppercase; border-radius: 3px; margin-left: 4px; font-size: 13px;
+                &:hover { background: darken($border, 2%); transition: all .3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05)}
+            }
+        }
+
+    } // .woocommerce-MyAccount-content
+}

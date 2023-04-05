@@ -1,0 +1,243 @@
+/**
+ * Woo Cart
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+body.woocommerce-cart {
+
+    header.header {
+        border-bottom: 1px $border solid;
+    }
+
+    .wc__wrapper { padding: 85px 0 0;
+        @include breakpoint(cousinbear) { padding: 0 10px;}
+    }
+
+    .woocommerce { display: flex; justify-content: space-between; flex-wrap:wrap; width: 100%; margin: 20px 0;
+
+        .woocommerce-cart-form { width: 67%; background: #fff; padding: 30px 20px 30px 0;
+            @include breakpoint(papabear) { width: 100%; padding: 100px 10px 0;}
+
+            table.shop_table {
+
+                thead { 
+                    th { padding: 10px;
+                        &.product-subtotal { text-align: right;}
+                    }
+                }
+
+                td {
+                    // Globals
+                    &.product-remove { width: 20px; font-size: 35px; vertical-align: middle;
+                        @include breakpoint(mamabear) { width: 30px; font-size: 25px;}
+
+                        a { font-size: 25px; color: darken($border, 10%); font-weight: 200; position: relative; top: -3px;
+                            &:hover { color: tomato}
+                        }
+                    }
+
+                    &.product-thumbnail { width: 12%;
+                        @include breakpoint(mamabear) { width: 30%; align-items: flex-start;}
+                    }
+
+                    &.product-name { max-width: 300px;
+                        @include breakpoint(mamabear) { flex: 3 0 70%; flex-direction: column; justify-content: center; align-items: flex-start; max-width: 100%;
+                            &:before { display: block;}
+                        }
+
+                        a { font-family: $primaryFont; font-size: 19px; color: $primary; font-weight: 700;
+                            &:hover { color: $primary;}
+                        }
+
+                        dl.variation { display: flex; flex-direction: column; flex-wrap:wrap; font-size: 13px; margin-top: 10px;
+                            dt { flex:1 0 50%; font-weight: 700;}
+                            dd { flex:1 0 50%; margin: 10px 0;
+                                p { line-height: 20px;
+                                    font-weight: normal;
+                                    strong { display: inline-block; min-width: 250px; font-weight: 700;
+                                        @include breakpoint(mamabear) { min-width: auto; display: block;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.product-quantity { max-width: 120px;
+                        @include breakpoint(mamabear) { max-width: 100%;}
+
+                        .quantity {
+                            label { display: none;}
+                            input[type="number"] { border:none; padding: 10px; text-align: center; font-size: 16px; color: $text; max-width: 80px; background: $lightgrey;
+                                @include breakpoint(mamabear) { width: 65px;}
+                            }
+                        }
+                    }
+
+                    &.product-price { color: $text; max-width: 135px;
+                        @include breakpoint(mamabear) { padding-top: 10px; font-weight: 500; max-width: 100%;}
+
+                        .subscription-details { display: block; font-size: 12px; color: $text; margin-top: 5px;}
+                    }
+
+                    &.product-subtotal { font-size: 18px; text-align: right; font-weight: 600; max-width: 150px; color: $text;
+                        @include breakpoint(mamabear) { max-width: 100%;}
+
+                        .subscription-price { 
+                            .subscription-details { display: block; font-size: 12px; color: $text; margin-top: 5px;}
+                        }
+                    }
+
+                    &.actions { padding: 10px 0;
+                        @include breakpoint(sisterbear) { width: 100%;}
+
+                        .coupon { display: flex; align-items: center; justify-content: flex-end; padding: 10px 0 10px 10px; width: 100%;
+                            @include breakpoint(mamabear) { flex-wrap: wrap; padding: 10px 0;}
+
+                            label { font-size: 13px; font-weight: 700;}
+
+                            input[type="text"] { border:none; padding: 10px 0; width: auto; font-size: 12px; color: $text; margin: 0 10px 0 5px; font-family: $primaryFont; border-bottom: 1px $text solid;
+                                @include breakpoint(sisterbear) { flex:1 0 auto; margin-right: 0;}
+                            }
+
+                            button,
+                            input[type="submit"] { font-size: 14px; padding: 10px 23px; display: block; cursor: pointer; border: none; background: $primary; color: #fff; font-family: $primaryFont; transition: all .4s ease; 
+                                &:hover { background: lighten($primary, 5%); transition: all .4s ease;}
+
+                                @include breakpoint(sisterbear) { flex:1 0 100%; margin: 10px 0 0;}
+                            }
+                        }
+
+                        button,
+                        input[name="update_cart"] { font-size: 14px; padding: 10px 20px; display: block; cursor: pointer; margin:10px 10px 0 auto; background: darken($lightgrey, 5%); color: $text; border: none; font-family: $primaryFont; transition: all .4s ease; font-weight: 700;
+                            &:hover { background: darken($text, 3%); transition: all .4s ease;}
+
+                            @include breakpoint(sisterbear) { flex:1 0 100%; margin-top: 0;}
+                        }
+                    }
+
+                }
+
+                @include breakpoint(mamabear) {
+                    .product-price,
+                    .product-quantity,
+                    .product-subtotal { flex:1 0 100%;
+                        &:before { }
+                    }
+                }
+            }
+        }
+
+        .cart-collaterals { width: 32%; padding: 30px 0 20px 30px; border-left: 1px $border solid;
+            @include breakpoint(papabear) { width: 100%; padding: 10px; border: none;}
+
+            .cart_totals { position: sticky; top: 20px;
+                h2 { font-size: 20px; color: $primary; font-weight: 700; margin-bottom: 20px; border-bottom: 1px $border solid; padding: 6px 10px 10px;}
+
+                table.shop_table {
+                    tbody {
+                        tr {
+                            @include breakpoint(mamabear) { padding: 0;}
+
+                            th { width: 40%; padding: 10px; text-align: left; border-bottom: 1px $border solid; vertical-align: middle; font-weight: 600;
+                                @include breakpoint(mamabear) { border: none;}
+                            }
+
+                            td { width: 60%; text-align: right;
+                                @include breakpoint(mamabear) { display: table-cell; vertical-align: middle; padding: 10px;
+                                    &:before { display: none;}
+                                }
+
+                                span.amount {  font-weight: 600;}
+                            }
+
+                            &.cart-subtotal { 
+                                &.recurring-total {
+                                    td { font-size: 14px; color: $text;
+                                        span.amount { font-size: 16px; font-weight: 600; display: block;}
+                                    }
+                                }
+                            }
+
+                            &.cart-discount { 
+                                .woocommerce-Price-amount { display: none;}
+                            }
+
+                            &.shipping { 
+                                .woocommerce-shipping-destination { font-size: 12px;}
+                            }
+
+                            &.recurring-totals { 
+                                th { color: $primary; font-weight: 700; font-size: 18px; padding-top: 20px; border-bottom: none;}
+                            }
+
+                            &.order-total {
+                                strong { font-size: 24px; font-weight: 600; color: $text;}
+                                span.amount { font-weight: 700;}
+
+                                &.recurring-total { 
+                                    td { font-size: 14px; color: $text;
+                                        strong { display: block; font-size: 24px; font-weight: 600; color: $text;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wc-proceed-to-checkout { margin: 20px 0;
+                    .button { font-family: $primaryFont; background: $primary; color: #fff; font-size: 17px; font-weight: 800; padding: 20px 40px; border: none; cursor: pointer; transition: all .4s ease; margin-left: auto; width: 100%; display: block; text-align: center;
+                        &:hover { background: lighten($primary, 3%); transition: all .4s ease;}
+                    }
+                }
+
+                .wc__continue__shopping { margin:0 0 10px;
+                    a { font-size: 16px; padding: 15px 20px; display: block; cursor: pointer; background: darken($lightgrey, 5%); color: $text; border: none; font-family: $primaryFont; transition: all .4s ease; font-weight: 700; text-align: center;
+                        &:hover { background: darken($lightgrey, 8%); transition: all .4s ease;}
+
+                        @include breakpoint(sisterbear) { flex:1 0 100%; margin-top: 0;}
+                    }
+                }
+            }
+        }
+
+        .wc__empty__basket { flex:1 0 100%; display: flex; justify-content: space-between; align-items: center; background: $primary; padding: 20px; margin: 30px 0;
+            @include breakpoint(brotherbear) { flex-direction: column; margin: 70px 0 0;}
+
+            .message { display: flex; align-items: center;
+                @include breakpoint(brotherbear) { flex-direction: column;}
+
+                figure { margin-right: 10px;
+                    @include breakpoint(brotherbear) { margin: 0 0 10px;}
+
+                    i { font-size: 21px; color: $secondary;}
+                }
+                
+                p { font-size: 14px; text-align: center; font-weight: 600; color: $secondary;}
+            }
+
+            &--buttons { display: flex; align-items: center;
+                @include breakpoint(brotherbear) { margin-top: 20px;}
+                a,
+                button { margin-left: 10px;}
+            }
+
+            // a { 
+            //     @include breakpoint(brotherbear) { margin-top: 20px;}
+
+            //     &:hover { background: darken($text, 2%); transition: all .3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.2)}
+            // }
+        }
+
+        p.return-to-shop { flex:1 0 100%; display: flex; justify-content: center; margin-bottom: 40px;
+            .wc-backward { font-size: 14px; font-weight: 800; padding: 10px 23px; display: block; text-transform: uppercase; cursor: pointer; background: $text; color: #fff; transition: all .4s ease; text-align: center;
+                &:hover { background: darken($text, 2%); transition: all .3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.2)}
+
+                @include breakpoint(sisterbear) { flex:1 0 100%; margin-top: 10px;}
+            }
+        }
+
+        p.cart-empty { display: none;}
+    }
+}

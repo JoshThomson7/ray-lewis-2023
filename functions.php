@@ -18,4 +18,6 @@ include 'modules/advanced-video-banners/functions/class-avb.php';
 include('modules/gravity-forms/functions/gf-functions.php');
 include('modules/blog/functions/class-fl1-blog-module.php');
 include('modules/advanced-testimonials/functions/at-functions.php');
+include('modules/woocommerce/functions/woo-functions.php');
+
 ?>

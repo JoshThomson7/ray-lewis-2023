@@ -1,0 +1,161 @@
+/**
+ * WooCommerce Login/Register
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+.wc__login__register { position: relative; background: #fff;
+
+    @media screen and ( max-height: 800px ) { align-items: flex-start; padding-top: 40px;}
+
+    &--back { position: absolute; top: 15px; right: 20px;
+        a { display: flex;
+            i { font-size: 30px; color: $primary;}
+        }
+    }
+
+    .max__width { display: flex; max-width: 1200px;
+        @include breakpoint(brotherbear) { flex-direction: column;}
+    }
+
+    &--wrapper { 
+        display: flex;
+        justify-content: space-between;
+        height: 100vh; 
+    }
+
+    &--left {
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @include breakpoint(brotherbear) { display: none;}
+    }
+
+    &--right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(brotherbear) { width: 100%; padding: 0 24px;}
+
+        figure {
+            width: 100%; 
+            max-width: 180px;
+            margin: 0 auto 40px;
+        }
+    }
+
+    &--form { display: flex; align-items: center; flex-direction: column; background: $primary; padding: 40px; width: 100%; max-width: 60%; min-width: 480px;
+        @include breakpoint(brotherbear) { max-width: 100%; min-width: 1px;}
+
+        .woocommerce-notices-wrapper { flex: 0 auto;}
+
+        ul { max-width: 500px; width: 100%; font-size: 14px; font-weight: 600;
+            &.woocommerce-message,
+            &.woocommerce-error { flex: 0 auto; margin: 0;}
+
+            &.woocommerce-message { margin-bottom: 20px;}
+
+            &.login-errors { display: none;
+                &.do-error { display: block;}
+            }
+        }
+
+        .wc__is__user { padding: 0 0 40px; text-align: center;
+            h2 { font-size: 27px; color: #fff; font-weight: 800; margin-bottom: 10px;}
+
+            p { font-size: 14px; line-height: 20px; color: #fff;}
+
+            a { color: #fff; font-weight: 700; text-decoration: underline;
+                &:hover { text-decoration: none;}
+            }
+        }
+
+        form { max-width: 500px; width: 100%;
+
+            &.register {
+                .wc__form__row {
+                    &.flex { display: flex; justify-content: space-between;
+                        .wc__form__field { width: 48%;}
+                    }
+                }
+            }
+
+            .wc__form__row { padding-bottom: 20px;
+
+                .wc__form__field { display: flex; flex-direction: column;
+                    label { font-size: 14px; font-weight: 800; color: #fff; margin-bottom: 5px;
+                        span.required { color: tomato;}
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="password"] { font-family: $primaryFont; font-size: 14px; padding: 13px; border:none; border-bottom: 1px #fff solid; color: $text; background: white;}
+
+                    button { font-size: 17px; transition: all .3s ease; margin-left: auto; border: none; padding: 15px 60px; background: $secondary; font-weight: 800; font-family: $primaryFont; color: #fff;
+                        &.disabled { opacity: 0.3;}
+                    }
+
+                    &.wc__forgot__password { align-items: flex-end;
+                        a { font-size: 12px; color: #fff; text-decoration: underline;}
+                    }
+
+                    &.submit { flex-direction: row; justify-content: space-between; align-items: center;}
+                }
+
+                .wc__remember__me { display: flex; align-items: center;
+                    @include pretty-checkradio("label", "\f0c8", "\f14a", '#fff');
+    
+                    label { color: #fff !important; font-size: 13px; text-transform: none; font-weight: 600;}
+                }
+            }
+
+            .wc-social-login { display: flex; flex-direction: column; align-items: center; margin-top: 20px; padding-top: 20px; border-top: 1px $lightgrey solid;
+                a { margin-top: 20px;}
+            }
+
+            // password strength
+            .woocommerce-password-strength { margin: 10px 0 0; border-radius: 3px; font-size: 14px; font-weight: 700; padding: 10px; text-align: center; font-size: 14px;
+                &.bad,
+                &.short { background: #fde9e5; color: tomato;}
+
+                &.good { background: #fdf0e1; color: #f98806;}
+                &.strong { background: #f0fde1; color: #61b105;}
+            }
+
+            .woocommerce-password-hint { background: #fff; border-radius: 3px; box-shadow: 0 1px 2px rgba(black, 0.05); font-size: 13px; margin-top: 10px; padding: 20px; display: flex; border: 1px $lightgrey solid;
+                &:before { font-family: "Font Awesome 5 Pro"; content: "\f0eb"; font-size: 22px; color: $primary; margin-right: 10px;}
+            }
+
+            .woocommerce-privacy-policy-text {  padding-bottom: 20px;
+                p { font-size: 13px; line-height: 19px; color: #fff;
+                    a { text-decoration: underline; color: #fff;}
+                }
+            }
+        }
+
+
+        .wc__login__register--footer { display: flex; align-items: center; flex-direction: column; margin-top: auto; max-width: 500px; width: 100%;
+
+            ul { display: flex; flex-direction: column; align-items: center; flex-wrap: wrap;
+
+                li { display: flex; align-items: center; font-size: 12px; color: #fff; margin-bottom: 4px;
+                    @include breakpoint(papabear) { display: flex; justify-content: center; align-items: center; padding-bottom: 5px;
+                        &:first-child { flex: 1 0 100%;}
+                        &:nth-child(2) { flex: 1 0 100%;}
+                    }
+
+                    i { margin-right: 5px;}
+
+                    &.social { padding: 0 2px; font-size: 16px;
+                        a { color: #fff;}
+                        &:first-of-type { font-size: 14px;}
+                    }
+                }
+            }
+        }
+    }
+}

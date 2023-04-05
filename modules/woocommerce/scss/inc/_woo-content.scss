@@ -1,0 +1,46 @@
+/**
+ * Woo Content
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+.wc__content { padding: 0; width: 100%;
+    @include breakpoint(grandpabear) { width: 100%;}
+
+    .wc__filters { display: none; margin-bottom: 40px;
+        @include breakpoint(grandpabear) { display: block;}
+
+        a { display: block; background: $secondary; padding: 20px; text-align: center; font-size: 18px; font-weight: 600; color: darken($text, 15%);}
+    }
+
+    .wc__page__title { padding: 0 0 20px; display: flex; justify-content: space-between; align-items: center;
+        h1 { font-size: 28px; text-transform: uppercase;}
+
+        .woocommerce-ordering {
+            select {font-family: $primaryFont; border: 1px $border solid; padding: 10px; font-size: 16px; color: $text; background: none; border-radius: 0;}
+        }
+    }
+
+    .wc__shop__section { padding: 40px 0; border-bottom: 1px darken($lightgrey, 5%) solid;
+        h2 { font-size: 30px; font-weight: 700; color: $primary; margin-bottom: 40px;}
+
+        .shop__oems { display: flex; align-items: center;
+            @include breakpoint(grandpabear) { flex-wrap: wrap;}
+
+            article { padding: 0 20px;
+                @include breakpoint(grandpabear) { width: 50%; padding:20px 40px;}
+                @include breakpoint(sisterbear) { width: 100%;}
+            }
+        }
+
+        .shop__oems:hover article:hover a { transition:all .4s ease; opacity:1;}
+        .shop__oems:hover article:not(:hover) a { transition:all .4s ease; opacity:0.2;}
+
+        .parts__categories { padding: 0;}
+
+        &:first-of-type { padding-top: 0;}
+    }
+
+    &.wc__has__sidebar { width: calc(100% - 240px); padding-left: 20px;}
+}

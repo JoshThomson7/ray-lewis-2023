@@ -1,0 +1,181 @@
+/**
+ * Woo Single Product
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+body.woocommerce-order-received {
+    header.header {
+        background: #fff;
+    }
+
+    .wc__wrapper { max-width: 960px; padding-top: 95px;
+        @include breakpoint(cousinbear) { padding: 0 20px;}
+
+        .woocommerce { padding-top: 0;}
+    }
+
+    .woocommerce-order { padding: 40px; max-width: 960px; margin: 40px auto 0; background: #fff;
+        @include breakpoint(mamabear) { padding: 10px;}
+    }
+}
+
+.woocommerce-order { width: 100%; padding: 40px 0;
+    h1 { font-size: 35px; font-weight: 700; color: $text; margin-bottom: 20px;}
+    h2 { font-size: 21px; font-weight: 700; color: $text; margin-bottom: 20px;}
+
+    p { line-height: 25px; font-size: 14px; color: $text; margin-bottom: 20px;
+
+        &.woocommerce-thankyou-order-received { font-size: 34px; font-weight: 700; letter-spacing: -1px; text-align: center;
+            @include breakpoint(sisterbear) { text-align: center; font-size: 28px;}
+        }
+
+        a { color: $primary; font-weight: 600;}
+
+        strong { font-weight: 700;}
+    }
+
+    ul.woocommerce-thankyou-order-details { display: none; flex-wrap: wrap; background: $lightgrey; padding: 20px; margin-bottom: 20px;
+        @include breakpoint(papabear) { padding: 10px;}
+
+        li { padding: 10px; width: math.percentage(math.div(1,3)); font-size: 15px; font-weight: 700; color: $text;
+            @include breakpoint(papabear) { width: 50%;}
+            @include breakpoint(sisterbear) { width: 100%;}
+
+            strong { font-weight: 500; display: block; text-transform: none; color: $text; margin-top: 5px;}
+
+            &.total,
+            &.method { display: none;}
+        }
+    }
+}
+
+.woocommerce-order-pay,
+.woocommerce-order-details { padding-top: 20px;
+    h2 { font-size: 25px; font-weight: 700; color: $text; margin-bottom: 20px;}
+
+    table.shop_table { width: 100%;
+        &.woocommerce-table--order-details { margin-bottom: 40px;}
+        .product-total { 
+            @include breakpoint(mamabear) { width: 100%;}
+        }
+
+        thead {
+            tr {
+                th { padding: 10px; font-size: 16px;
+                    &.product-total { text-align: right;}
+                }
+            }
+        }
+
+        tbody {
+            tr { width: 100%;
+                @include breakpoint(mamabear) { display: flex; flex-wrap: wrap; border-bottom: 1px $border solid; padding: 10px 0;}
+
+                td { padding: 10px; text-align: left; vertical-align: middle; border-bottom: 1px $border solid;
+                    @include breakpoint(mamabear) { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: none; padding: 0 10px 10px;
+                        &:before { display: block; content: attr(data-title); font-size: 13px; font-weight: 700; text-transform: uppercase;}
+                    }
+
+                    &.product-name { color: $primary;}
+                    &.product-total { text-align: right; color: $text; font-weight: 700;}
+
+                    a { color: $primary; font-weight: 600;
+                        &.button { 
+                            color: #fff;
+                            background: $primary;
+                            font-size: 13px;
+                            padding: 4px 10px;
+                        }
+                    }
+
+                    ul.wc-item-meta { display: flex; font-size: 14px; margin-top: 10px; flex-direction: column;
+                        li { padding-bottom: 10px;
+                            strong { font-weight: 700;}
+                            p { font-size: 14px; color: $text;}
+                        }
+                    }
+
+                    // PDF Product Vouchers
+                    .wc-pdf-product-vouchers-order-item-voucher { background: $lightgrey; border-radius: 3px; padding: 15px 20px; margin: 20px 0 20px; line-height: 35px;
+                        a { display: inline-block; padding: 5px 10px 6px; background: $secondary; color: #fff; font-weight: 700; border-radius: 3px; line-height: normal;
+                            &:hover { background: $primary;}
+                        }
+                    }
+                }
+            }
+        }
+
+        tfoot {
+            tr { border-bottom: 1px $border solid;
+                @include breakpoint(mamabear) { display: flex; flex-wrap: wrap; justify-content: space-between; border-bottom: 1px $border solid; padding: 10px 0;}
+
+                th { text-align: left; padding: 10px; vertical-align: middle;}
+                td { text-align: right; padding: 10px; vertical-align: middle;}
+
+                &:last-child { font-weight: 700; border-top: 3px $border solid; border-bottom: 3px $border solid;
+                    td { font-size: 32px; color: $text;}
+                }
+            }
+        }
+    }
+
+    p.order-again { display: none;}
+
+    // Custom fields
+    .wc__cf__shipping { padding: 20px 0 0;
+        h3 { font-size: 24px; font-weight: 700; color: $primary; margin-bottom: 20px; letter-spacing: -0.5px;}
+
+        p { line-height: 25px; font-size: 14px; color: $text;
+            br { display: none;}
+            strong { font-size: 16px; font-weight: 700; text-transform: uppercase; color: $text; margin-bottom: 15px; display: block;}
+        }
+    }
+
+    #order_review { width: 100%; padding-top: 40px;
+        #payment { 
+            button#place_order { background: $quaternary; margin: 20px 0; color: #fff; font-size: 17px; margin-left: auto;}
+        }
+    }
+}
+
+.woocommerce-customer-details { padding: 20px 0 0;
+    h2 { font-size: 25px; font-weight: 700; color: $text; margin-bottom: 20px;}
+
+    .woocommerce-columns { display: flex;
+        @include breakpoint(sisterbear) { flex-direction: column;}
+
+        .woocommerce-column { padding-right: 100px; width: 50%;
+            @include breakpoint(sisterbear) { width: 100%;}
+        }
+    }
+
+    address { line-height: 22px;
+        p { font-size: 16px; color: $text;
+            &:first-of-type { margin-top: 10px;
+                &.woocommerce-customer-details--phone { margin-bottom: 0;}
+            }
+        }
+    }
+}
+
+.apm__patient__details { 
+    h3 { font-size: 25px; font-weight: 700; color: $text; margin-bottom: 20px;}
+    p { line-height: 25px; font-size: 14px; color: $text; margin-bottom: 2px;
+        strong { font-weight: 700;}
+    }
+}
+
+.wc__refer__friend { 
+    h2 { font-size: 25px; font-weight: 800; margin-bottom: 20px;}
+    p { line-height: 25px; font-size: 14px; color: $text;}
+
+    .gens-raf-message { border-left: none; background: $secondary; font-size: 14px;
+        .gens-ctc { padding: 5px 10px; background: $primary; font-weight: 700; color: #fff;}
+    }
+
+    #gens-referral_share__email {
+        input[type="submit"] { padding: 10px 30px; background: $primary !important; font-weight: 700; color: #fff; font-family: $primaryFont; font-size: 16px; border-radius: 0;}
+    }
+}

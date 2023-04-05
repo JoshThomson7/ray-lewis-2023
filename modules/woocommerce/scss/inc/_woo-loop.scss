@@ -1,0 +1,87 @@
+/**
+ * Woo Loop
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+.wc__products {
+
+    // list
+    &.wc__products__list {
+        article { display: flex; justify-content: space-between; align-items: center; padding-bottom: 40px;
+            @include breakpoint(mamabear) { flex-direction: column;}
+
+            .wc__product__img { width: 35%; background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 360px; background-color: $lightgrey;
+                @include breakpoint(mamabear) { width: 100%; margin-bottom: 20px;}
+
+                &:hover { opacity: 0.7;}
+            }
+
+            .wc__product__content { width: 65%; padding: 0 40px; display: flex; flex-direction: column;
+                @include breakpoint(mamabear) { width: 100%; padding: 0;}
+
+                h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px;
+                    a { color: $text;}
+                }
+
+                h3 { font-size: 36px; color: $text; font-weight: 700; letter-spacing: -0.5px;
+                    small { font-size: 22px; font-weight: 400; color: $border;}
+                }
+
+                .wc__product__meta { margin: 20px 0; border-top: 1px darken($lightgrey, 5%) solid; border-bottom: 1px darken($lightgrey, 5%) solid; padding: 20px 0; display: flex; flex-wrap: wrap; justify-content: space-between;
+
+                    .wc__meta__data { width: math.percentage(math.div(1,3)); flex:1 0 auto; padding-bottom: 10px;
+                        @include breakpoint(brotherbear) { width: 50%;}
+
+                        h4 { font-size: 14px; font-weight: 700; color: $text; text-transform: uppercase;}
+                        p { font-size: 16px; font-weight: 400; color: $border; padding-top: 4px;
+                            a { color: $border;
+                                &:hover { color: $primary;}
+                            }
+                        }
+                    }
+                }
+
+                a.button { align-self: flex-end;}
+            }
+        }
+    }
+
+    // grid
+    &.wc__products__grid { display: flex; flex-wrap: wrap;
+        article { width: math.percentage(math.div(1,4)); flex: 1 0 325px; display: flex; flex-direction: column;
+            @include breakpoint(sisterbear) { flex: 1 0 100%}
+
+            .product__inner { margin: 20px 10px 40px; display: flex; flex-direction: column; flex: 1;
+                a { display: block;
+                    figure.wc__product__img { opacity:1; transition: all .4s ease; display: flex; justify-content: center; height: 220px;
+                        img { max-height: 100%; width: auto;}
+                    }
+
+                    &:hover {
+                        figure.wc__product__img { opacity:0.7; transition: all .4s ease;}
+                    }
+                }
+
+                .wc__content__content { padding: 20px 10px; text-align: center; display: flex; flex-direction: column; flex: 2;
+                    h2 { font-size: 15px; color: $textLight; margin-bottom: 5px; line-height: normal; font-weight: 600;}
+                    span.woocommerce-Price-amount { font-size: 21px; font-weight: 800; margin-bottom: 20px;}
+                    h3 { font-size: 13px; color: $text; margin-bottom: 0; line-height: normal;}
+                    p { font-size: 13px; color: $text; line-height: 23px; margin-bottom: 30px;}
+
+                    a { font-size: 13px; display: block; border: 2px $quaternary solid; color: $text; padding: 10px 20px; text-transform: uppercase; margin: auto 0 0; font-weight: 700; align-self: center;}
+                }
+            }
+        }
+    }
+}
+
+.wc__products__not__found { text-align: center;
+    figure { max-width: 150px; margin: 0 auto 40px;}
+    h2 { font-size: 22px; text-transform: uppercase; color: $text; margin-bottom: 20px;}
+    p { font-size: 16px; color: $text; margin-bottom: 20px;
+        a,
+        span { color: $text; font-weight: 600;}
+    }
+}

@@ -1,0 +1,76 @@
+/**
+ * Woo Single Product
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+table.shop_table { width: 100%;
+    thead {
+        @include breakpoint(mamabear) { display: none;}
+
+        tr {
+            th { font-size: 16px; font-weight: 700; color: $text; padding: 0 10px; text-align: left; border-bottom: 1px $border solid; vertical-align: middle;}
+        }
+    }
+
+    tbody {
+        tr { width: 100%;
+            @include breakpoint(mamabear) { display: flex; flex-wrap: wrap; border-bottom: 1px $border solid; padding: 10px 0;}
+
+            td { padding: 10px; text-align: left; vertical-align: middle; border-bottom: 1px $border solid; font-size: 14px;
+                @include breakpoint(mamabear) { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: none; padding: 0 10px 10px;}
+
+                a { color: $primary; font-weight: 700;}
+
+                strong { font-weight: 700;
+                    &.highlight { color: darken($border, 30%);}
+                }
+
+                small { font-size: 12px;}
+            }
+        }
+
+        .wc__cart__product { display: flex; justify-content: space-between; align-items: center; font-size: 17px; font-weight: 700; width: 100%;
+
+            @include breakpoint(sisterbear) {
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+                padding-left: 15px;
+            }
+
+            .woocommerce-Price-amount { font-weight: 700; font-size: 22px;}
+
+            &--item { display: flex; align-items: center;
+                @include breakpoint(sisterbear) {
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+
+                div:not(.wc__cart__product--img) { flex: 1;}
+            }
+
+            &--img { width: 80px; margin-right: 20px;
+                @include breakpoint(sisterbear) { margin-right: 0;}
+            }
+
+            &--price { display: flex; align-items: center;
+                .cart-qty { max-width: 50px; margin-right: 20px;
+                    @include breakpoint(mamabear) { max-width: 100px;}
+                    input[type="number"] { font-family: $primaryFont; border:none; padding: 10px 0 10px 10px; width: auto; font-size: 14px; font-weight: 500; color: $text; width: 100%; border-bottom: 1px $text solid; text-align: center;}
+                }
+            }
+
+            &--meta { margin: 10px 0;
+                ul { font-size: 14px;
+                    li { display: flex; align-items: center; padding: 3px 0;
+                        strong { font-weight: 700; min-width: 120px;}
+                        span { font-weight: 500;}
+                    }
+                }
+            }
+        }
+    }
+}

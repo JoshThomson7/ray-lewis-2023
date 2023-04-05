@@ -1,0 +1,45 @@
+/**
+ * Woo Notices
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+.woocommerce-NoticeGroup { flex:1 0 100%;}
+
+.woocommerce-message,
+.woocommerce-Message,
+ul.woocommerce-error li { display: flex; align-items: center; padding: 9px 10px 7px; margin: 20px; flex: 1 0 100%; background: $lightgrey; color: $text; font-size: 13px; font-weight: 600;
+    @include breakpoint(mamabear) { margin-bottom: 10px;}
+
+    &:before { font-family: "Font Awesome 6 Pro"; content: "\f05a"; color: $primary; font-size: 23px; display: block; margin-right: 10px;}
+
+    .button { font-family: $primaryFont; font-size: 14px; font-weight: 800; padding: 10px 20px; display: block; order:2; margin-left: auto; border-left: 140px #fff solid; min-width: auto; text-align: center; background: $primary; color: #fff; border: none;
+        @include breakpoint(mamabear) { margin: 10px 0 0; border-left: none; min-width: 100px;}
+
+        &:hover { background: $text;}
+
+        &.wc-forward { border-left: 140px #fff solid;
+            @include breakpoint(mamabear) { border-left: none;}
+        }
+    }
+
+    .restore-item { margin-left:5px; color: $primary; text-decoration: underline;}
+
+    .woocommerce-cart & { margin:0 0 20px;}
+}
+
+.woocommerce-info { font-size: 14px;}
+
+ul.woocommerce-error { flex:1 0 100%; display: flex; align-items: center; flex-wrap: wrap;
+    li { margin: 0 0 20px; background: none; color: tomato; border: 1px solid lighten(tomato, 20%); border-radius: 4px;
+        &:before { font-family: 'Font Awesome 5 Pro'; content: "\f057"; color: tomato; font-weight: 100; margin-top: -2px;}
+
+        strong { font-weight: 600; margin-right: 5px;}
+    }
+}
+
+.woocommerce-notices-wrapper { flex: 1 0 100%;
+    @include breakpoint(papabear) { flex: 1 0 auto;}
+    .woocommerce-message { background: #fff; border: 1px solid $border;}
+}

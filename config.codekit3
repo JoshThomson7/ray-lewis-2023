@@ -2639,6 +2639,770 @@
       "oAP" : "\/modules\/mega-menu.php",
       "oF" : 0
     },
+    "\/modules\/woocommerce\/assets\/js\/woo-add-to-cart.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/assets\/js\/woo-add-to-cart.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/index.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-ajax-add-to-cart.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-ajax-add-to-cart.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-ajax-filter.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-ajax-filter.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-cart.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-cart.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-checkout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-checkout.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-custom-checkout-fields.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-custom-checkout-fields.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-emails.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-emails.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-enqueue.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-enqueue.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-login-register.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-login-register.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-my-account.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-my-account.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-pages.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-pages.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-performance.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-performance.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-redirects.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-redirects.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-related-products.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-related-products.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-sidebars.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-sidebars.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-single-product.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-single-product.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-styles.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-styles.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-templates.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-templates.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/inc\/woo-wp-login.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/inc\/woo-wp-login.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/index.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/functions\/woo-functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/functions\/woo-functions.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/img\/cart-loader.gif" : {
+      "ft" : 4194304,
+      "iS" : 723,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/img\/cart-loader.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/modules\/woocommerce\/img\/select-arrow-down.png" : {
+      "ft" : 32768,
+      "iS" : 1389,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/img\/select-arrow-down.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/modules\/woocommerce\/img\/wc-loader.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/modules\/woocommerce\/img\/wc-loader.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/modules\/woocommerce\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/index.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/js\/_woo.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/js\/_woo-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/js\/inc\/_woo-add-to-cart.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/js\/inc\/_woo-add-to-cart-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/js\/inc\/_woo-ajax.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/js\/inc\/_woo-ajax-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/js\/inc\/_woo-easyzoom.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/js\/inc\/_woo-easyzoom-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/js\/inc\/_woo-gallery.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/js\/inc\/_woo-gallery-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/js\/inc\/_woo-variations.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/js\/inc\/_woo-variations-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/lib\/countdown\/_countdown.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/lib\/countdown\/_countdown-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/lib\/easyzoom\/_easyzoom.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/lib\/easyzoom\/_easyzoom-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/modules\/woocommerce\/lib\/easyzoom\/_easyzoom.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/lib\/easyzoom\/_easyzoom.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/_woo.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/_woo.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-cart.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-cart.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-checkout.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-checkout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-content.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-content.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-global.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-global.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-login-register.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-login-register.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-loop.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-loop.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-lost-password.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-lost-password.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-my-account.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-my-account.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-notices.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-notices.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-order.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-order.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-shop.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-shop.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-sidebars.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-sidebars.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-single-product.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-single-product.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/scss\/inc\/_woo-table.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/woocommerce\/scss\/inc\/_woo-table.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/modules\/woocommerce\/templates\/add-to-cart\/woo-add-to-cart.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/add-to-cart\/woo-add-to-cart.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/add-to-cart\/woo-auction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/add-to-cart\/woo-auction.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/add-to-cart\/woo-buy.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/add-to-cart\/woo-buy.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/add-to-cart\/woo-extras.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/add-to-cart\/woo-extras.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/add-to-cart\/woo-simple.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/add-to-cart\/woo-simple.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/add-to-cart\/woo-variable-subscription.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/add-to-cart\/woo-variable-subscription.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/add-to-cart\/woo-variable.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/add-to-cart\/woo-variable.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/login-register\/woo-forgot-password.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/login-register\/woo-forgot-password.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/login-register\/woo-login.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/login-register\/woo-login.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/login-register\/woo-register.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/login-register\/woo-register.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/login-register\/woo-reset-password.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/login-register\/woo-reset-password.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-auction-history.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-auction-history.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-gallery.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-nav.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-nav.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-sidebar.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/single-product\/woo-single-product-sidebar.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/single-product\/woo-single-product.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/single-product\/woo-single-product.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-archive-product.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-archive-product.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-cart-empty.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-cart-empty.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-checkout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-checkout.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-login-register.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-login-register.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-loop-grid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-loop-grid.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-loop-list.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-loop-list.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-my-account.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-my-account.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-orders.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-orders.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-query.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-query.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-shop.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-shop.php",
+      "oF" : 0
+    },
+    "\/modules\/woocommerce\/templates\/woo-sidebar.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/woocommerce\/templates\/woo-sidebar.php",
+      "oF" : 0
+    },
     "\/modules\/wp-feefo.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3057,6 +3821,46 @@
       "oAP" : "\/style-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/cart\/cart-empty.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/cart\/cart-empty.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/cart\/cart.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/cart\/cart.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/checkout\/review-order.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/checkout\/review-order.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/order\/order-details.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/order\/order-details.php",
+      "oF" : 0
     },
     "\/wp-login.min.css" : {
       "aP" : 1,

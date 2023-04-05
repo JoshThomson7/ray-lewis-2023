@@ -1,0 +1,34 @@
+/**
+ * Woo Shop
+ *
+ * Custom shop page: anything can go here
+ *
+ * @package woocommerce/
+ * @version 1.0
+*/
+
+.wc__product__categories { padding: 0 40px 80px; display: flex; flex-wrap: wrap;
+    @include breakpoint(brotherbear) { padding: 0 20px;}
+
+    article { position: relative; width: math.percentage(math.div(1,4)); height: 490px; background-size: cover; background-repeat: no-repeat; background-position: center; flex:1 0 320px;
+        a { display: flex; width: 100%; height: 100%; align-items: flex-end; padding: 0 40px 40px; position: relative; z-index: 2; border: 10px #fff solid;
+            span { font-size: 28px; font-weight: 700; color: #fff; transition: all .2s ease;}
+        }
+
+        .wc__product__cat__img__overlay { position: absolute; width: 100%; height: 100%; top:0; left:0; z-index: 1; transition: all .4s ease;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+            background: -moz-linear-gradient(top, rgba($tertiary,0) 0%, rgba($tertiary,0.8) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba($tertiary,0) 0%,rgba($tertiary,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba($tertiary,0) 0%,rgba($tertiary,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        &:hover {
+            .wc__product__cat__img__overlay { transition: all .4s ease;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+                background: -moz-linear-gradient(top, rgba($primary,0) 0%, rgba($primary,0.8) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba($primary,0) 0%,rgba($primary,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba($primary,0) 0%,rgba($primary,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            }
+        }
+    }
+}
