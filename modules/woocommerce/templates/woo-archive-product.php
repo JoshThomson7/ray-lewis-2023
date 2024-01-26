@@ -47,7 +47,6 @@ if($products->have_posts()):
             endwhile; woocommerce_reset_loop(); wp_reset_postdata();
         ?>
 
-        <!-- <?php pagination($products->max_num_pages); ?> -->
     </div><!-- wc__products -->
 
 <?php else: ?>

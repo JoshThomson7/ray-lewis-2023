@@ -231,17 +231,22 @@ section.avb {
 
             .avb-banner {
                 min-height: auto;
-                padding: 60px 0;
+                padding: 20px 0;
 
                 .avb-banner__caption {
-                    h1, h2 { 
-                        font-size: 37px;
-                        color: #fff;
-                        @include breakpoint(teenbear){
-                            font-size: 28px;
+                    .avb-banner__caption-wrap{
+                        padding: 10px;
+
+                        h1, h2 { 
+                            font-size: 34px;
+                            color: #fff;
+                            padding: 0;
+                            @include breakpoint(teenbear){
+                                font-size: 28px;
+                            }
                         }
+                        h2 { line-height: 41px;}
                     }
-                    h2 { line-height: 41px;}
                 }
             }
         }

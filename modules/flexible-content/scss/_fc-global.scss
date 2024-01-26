@@ -140,7 +140,7 @@ $fc_bk_colours: (
     tertiary: $tertiary,
     dark: $tertiary,
     quaternary: $quaternary,
-    lightgrey: $lightgrey
+    light-grey: $lightgrey
 );
 
 @each $key, $fc_bk_colour in $fc_bk_colours {
@@ -155,7 +155,7 @@ $fc_bk_colours: (
 
         @if $key == primary or $key == dark {
             .fc-layout-heading {
-                h2, p { color: #fff;}
+                h2, p { color: $secondary;}
             }
 
             .fc_icon_grid_wrapper { 
@@ -169,9 +169,9 @@ $fc_bk_colours: (
             }
 
             .accordion__wrap:not(.active) { 
-                border-bottom: 1px rgba(white, 0.4) solid !important;
+                border-bottom: 1px rgba($secondary, 0.4) solid !important;
 
-                h3 { color: #fff !important;}
+                h3 { color: $secondary !important;}
                 span { color: $tertiary !important;}
             }
 
@@ -194,6 +194,27 @@ $fc_bk_colours: (
                 }
             }
 
+        } @else if $key == light-grey {
+            .fc_free_text{
+                p{color: white;}
+            }
+
+        }
+    }
+}
+
+.fc_free_text{
+    .fc-bk-light-grey{
+        p{color: white;}
+    }
+
+    .fc-bk-primary{
+        h1,h2,h3,h4,h5,h6{color: $secondary;}
+
+        a{color: $secondary;
+            &::after{
+                background: $secondary;
+            }
         }
     }
 }

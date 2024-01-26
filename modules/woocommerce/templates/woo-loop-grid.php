@@ -18,7 +18,7 @@ $all_product_cats = join(', ', $get_product_cats);
 ?>
     <article>
         <div class="product__inner">
-            <a href="<?php the_permalink(); ?><?php echo $page_slug; ?>" title="<?php the_title(); ?>">
+            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <figure class="wc__product__img">
                     <img src="<?php echo $prod_image['url']; ?>" alt="<?php the_title(); ?>">
                 </figure>

@@ -50,7 +50,7 @@
 
     // grid
     &.wc__products__grid { display: flex; flex-wrap: wrap;
-        article { width: math.percentage(math.div(1,4)); flex: 1 0 325px; display: flex; flex-direction: column;
+        article { width: math.percentage(math.div(1,3)); flex: 1 0 430px; display: flex; flex-direction: column;
             @include breakpoint(sisterbear) { flex: 1 0 100%}
 
             .product__inner { margin: 20px 10px 40px; display: flex; flex-direction: column; flex: 1;
