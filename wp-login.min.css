@@ -310,14 +310,14 @@
 
 @media (prefers-reduced-motion: reduce) {
   .fa-beat,
-.fa-bounce,
-.fa-fade,
-.fa-beat-fade,
-.fa-flip,
-.fa-pulse,
-.fa-shake,
-.fa-spin,
-.fa-spin-pulse {
+  .fa-bounce,
+  .fa-fade,
+  .fa-beat-fade,
+  .fa-flip,
+  .fa-pulse,
+  .fa-shake,
+  .fa-spin,
+  .fa-spin-pulse {
     -webkit-animation-delay: -1ms;
     animation-delay: -1ms;
     -webkit-animation-duration: 1ms;
@@ -16318,14 +16318,14 @@ readers do not read off random characters that represent icons */
 
 @media (prefers-reduced-motion: reduce) {
   .fa-beat,
-.fa-bounce,
-.fa-fade,
-.fa-beat-fade,
-.fa-flip,
-.fa-pulse,
-.fa-shake,
-.fa-spin,
-.fa-spin-pulse {
+  .fa-bounce,
+  .fa-fade,
+  .fa-beat-fade,
+  .fa-flip,
+  .fa-pulse,
+  .fa-shake,
+  .fa-spin,
+  .fa-spin-pulse {
     -webkit-animation-delay: -1ms;
     animation-delay: -1ms;
     -webkit-animation-duration: 1ms;
@@ -49600,7 +49600,7 @@ html body.login {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background: #ffd100;
+  background: #FEDD01;
 }
 html .login {
   /* Logo */
@@ -49639,18 +49639,18 @@ html .login p.message {
   border-radius: 3px;
 }
 html .login #nav {
-  color: #474747 !important;
+  color: #000 !important;
   float: right;
   margin: 0;
   padding: 0 20px 20px 0;
   opacity: 0.7;
 }
 html .login #nav a {
-  color: #474747 !important;
+  color: #000 !important;
   text-decoration: none !important;
 }
 html .login #nav a:hover {
-  color: #474747 !important;
+  color: #000 !important;
   text-decoration: underline !important;
 }
 html .login #login {
@@ -49671,11 +49671,11 @@ html .login #backtoblog {
   opacity: 0.7;
 }
 html .login #backtoblog a {
-  color: #474747 !important;
+  color: #000 !important;
   text-decoration: none;
 }
 html .login #backtoblog a:hover {
-  color: #474747 !important;
+  color: #000 !important;
   text-decoration: underline;
 }
 html .login form {
@@ -49687,7 +49687,7 @@ html .login form {
 }
 html .login form label {
   font-size: 18px;
-  color: #474747;
+  color: #000;
   position: relative;
   content: "";
   display: block;
@@ -49697,9 +49697,9 @@ html .login form input[type=text],
 html .login form input[type=password] {
   background: none;
   border: none;
-  border-bottom: 1px solid #474747;
+  border-bottom: 1px solid #000;
   box-shadow: none;
-  color: #474747;
+  color: #000;
   padding: 15px 10px;
   margin-top: 5px;
   font-size: 16px;
@@ -49712,7 +49712,7 @@ html .login form label[for=user_login]:before {
   position: relative;
   top: 4px;
   margin-right: 7px;
-  color: #ffd100;
+  color: #FEDD01;
 }
 html .login form label[for=user_pass]:before {
   content: "\f160";
@@ -49721,7 +49721,7 @@ html .login form label[for=user_pass]:before {
   position: relative;
   top: 4px;
   margin-right: 7px;
-  color: #ffd100;
+  color: #FEDD01;
 }
 html .login form p.submit {
   display: flex;
@@ -49733,7 +49733,7 @@ html .login form p.submit #wp-submit {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Brandon Grotesque", sans-serif;
-  background: #474747;
+  background: #000;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -49745,7 +49745,7 @@ html .login form p.submit #wp-submit:hover {
 }
 html .login .button.wp-hide-pw .dashicons {
   top: 14px;
-  color: #ffd100;
+  color: #FEDD01;
 }
 html .forgetmenot {
   padding-top: 17px;
@@ -49757,7 +49757,7 @@ html .forgetmenot input {
 }
 html .forgetmenot label {
   font-size: 15px !important;
-  color: #474747;
+  color: #000;
   display: flex;
   margin-left: 5px;
   line-height: normal;

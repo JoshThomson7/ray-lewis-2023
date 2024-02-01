@@ -154,6 +154,8 @@ $fc_bk_colours: (
         }
 
         @if $key == primary or $key == dark {
+            p{color: #000;}
+            
             .fc-layout-heading {
                 h2, p { color: $secondary;}
             }
@@ -177,8 +179,8 @@ $fc_bk_colours: (
 
             .fc_feature_wrapper { 
                 .feature__text { 
-                    h3 { color: #fff !important;}
-                    p { color: lighten($primary, 65%) !important;}
+                    h3 { color: #000 !important;}
+                    p { color: #000!important;}
                 }
             }
 

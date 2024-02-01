@@ -104,11 +104,11 @@
 
             // overlay
             &.overlay {
-                .grid__box__image { min-height:300px; border-radius: 5px; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat; margin-bottom: 0;
+                .grid__box__image { min-height:300px; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat; margin-bottom: 0;
 
                     a { display: block; width: 100%; height: 100%; position: absolute; top:0; left:0;}
                 }
-                .grid__box__content { border-radius: 5px; overflow: hidden; position: absolute; top: 0; left:0; width: 100%; height: 100%; padding: 15px; justify-content: flex-end; transition: all .8s ease;
+                .grid__box__content { overflow: hidden; position: absolute; top: 0; left:0; width: 100%; height: 100%; padding: 15px; justify-content: flex-end; transition: all .8s ease;
 
                     background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(71,71,71,.9) 100%); /* FF3.6-15 */
                     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(71,71,71,.9) 100%); /* Chrome10-25,Safari5.1-6 */

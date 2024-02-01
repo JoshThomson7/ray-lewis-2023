@@ -102,7 +102,7 @@ function fc_field_section($row_layout, $open_close) {
                 }
 
                 $bk_img_styles = $fc_styles['fc_background_image_styles'];
-                $html .='<div class="fc-layout-bk-img" style="background-image:linear-gradient(to bottom, rgba(71, 71, 71, 0.32), rgba(71, 71, 71, 0.63)),url('.$bk_img.'); '.$bk_img_styles.'"></div>';
+                $html .='<div class="fc-layout-bk-img" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.63)),url('.$bk_img.'); '.$bk_img_styles.'"></div>';
             }
 
             if($has_bk) {
